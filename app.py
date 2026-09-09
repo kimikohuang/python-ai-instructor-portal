@@ -187,7 +187,10 @@ if selected_week == "Week 1":
         with col_b:
             st.markdown("#### 🗣️ English Teaching Scripts")
             st.info("""
-            * **10:00 - 10:15**: *"Welcome back! Let's unlock some keyboard superpowers:
+            * **10:00 - 10:15 (Cloud Setup, Transparency Earphones & Voice Prompting)**:
+              *"Welcome back! Before we code, let's unlock the ultimate AI productivity hack: **Voice Prompting**. 
+              If you have **transparency-mode earphones**, wear them now! You can micro-whisper your prompts directly to Gemini without typing, saving tons of time, while still hearing my lecture and your partner's ideas clearly.
+              Now let's review our core keyboard shortcuts:
               - **Copy / Paste**: `Ctrl + C` / `Ctrl + V` on Windows, or `Cmd ⌘ + C` / `Cmd ⌘ + V` on Mac.
               - **The Life Saver (Undo)**: `Ctrl + Z` or `Cmd ⌘ + Z` if you accidentally delete code!
               - **Colab Instant Run**: Press `Shift + Enter` to run any code cell instantly.
@@ -198,13 +201,10 @@ if selected_week == "Week 1":
               Now watch closely: I copy this 4-line code, switch to Google Colab, paste it in with `Ctrl+V`, and without touching the mouse, I press **Shift + Enter**!
               Look at the screen—in 3 seconds, a real financial trend chart appears. Now, open your Colab and do the exact same thing together with me!"*
             * **10:40 - 10:48 (Economics Reflection, Interactive Q&A & Fast-Finisher Options)**:
-              *"Look at this soaring trend chart of TSMC on the big screen! Connecting back to your freshman Economics: *'What market signals or supply-and-demand shifts explain this massive stock rally over the past year? Any thoughts?'*
-              (Invite 1-2 students to share briefly)
-              *Spot on! Generative AI created an unprecedented global demand shock for computing power. Our Python code is not just drawing lines—it visualizes real-world economic dynamics!*
-              While everyone finishes their execution, here are two quick micro-options for fast finishers:
-              - **Option A (Tweak Parameters)**: Change `period='1y'` to `'5y'` to view a 5-year macro trend, or replace `'2330.TW'` with NVIDIA (`'NVDA'`).
-              - **Option B (Ask Gemini)**: Switch to your Gemini tab and ask: *'Explain 3 key business factors driving TSMC's stock price over the past year.'*
-              In our next session, you will officially customize this code in Lab 0!"*
+              *"Look at this soaring curve of TSMC. Connecting back to your freshman Economics: what market signals or supply-and-demand shifts explain this massive rally?
+              (Encourage 1-2 hands)
+              Spot on! Generative AI created an unprecedented demand shock for computing power.
+              For fast teams: tweak `period='1y'` to `'5y'` to view the multi-year cycle, or ask Gemini to outline 3 macro catalysts behind this chart!"*
             * **10:48 - 10:50**: *"Take a short break. Any Wi-Fi issues, come to the front desk now!"*
             """)
 
