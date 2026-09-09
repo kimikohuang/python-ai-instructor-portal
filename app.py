@@ -175,8 +175,10 @@ if selected_week == "Week 1":
                 4. 在 Colab 儲存格按 `Ctrl+V` (或 `Cmd+V`) 貼上。
                 5. 雙手離開滑鼠，口頭帶全班一起大聲倒數：「按下 **Shift + Enter**！」
                 6. 幾秒後折線圖跳出，全班感受成就感！隨後請全班跟著老師做一次。
-            * **10:40 - 10:48 ｜ 商業數據思考、超前快手加碼挑戰 (2 Options) 與任務預告**
-              * *全班引導*：連結大一經濟與會計數據，說明為何動態圖表比靜態報表更能看出營運週期。
+            * **10:40 - 10:48 ｜ 商業數據思考、【課堂互動提問：台積電與經濟學】與快手加碼**
+              * *課堂互動提問（啟發思考）*：
+                * 指著大螢幕上台積電一路飆升的走勢問全班：「看到這條曲線，如果用大家在大一【經濟學】學過的供需理論或景氣循環，背後反映了什麼全球商業訊號？」
+                * *老師收攏點評*：生成式 AI 爆發帶來了全球對頂尖算力的巨大需求衝擊（Demand Shock），供不應求讓晶圓代工龍頭直接受惠。圖表不只是程式畫出來的線，而是真實資本市場的經濟脈動！
               * *快手加碼 (Fast-finisher Options)*：針對提早跑完的同學，現場拋出 2 個延伸挑戰：
                 * **Option A（改參數）**：把代碼中的 `period="1y"` 改成 `period="5y"`，或把代號改成輝達 `"NVDA"`，觀察全球 AI 晶片浪潮。
                 * **Option B（問 AI 商業邏輯）**：切到 Gemini 分頁提問：「請分析台積電過去一年的關鍵成長動能」，體驗代碼結合商業分析。
@@ -198,8 +200,11 @@ if selected_week == "Week 1":
               *"Look at the main screen. In our portal, we have the prompt: 'Fetch TSMC 2330.TW for 1 year and plot closing price'. That is all you say to AI!
               Now watch closely: I copy this 4-line code, switch to Google Colab, paste it in with `Ctrl+V`, and without touching the mouse, I press **Shift + Enter**!
               Look at the screen—in 3 seconds, a real financial trend chart appears. Now, open your Colab and do the exact same thing together with me!"*
-            * **10:40 - 10:48 (Business Reflection & Fast-Finisher Options)**:
-              *"Awesome job seeing your charts pop up! While everyone catches up, here are two quick micro-options for fast finishers:
+            * **10:40 - 10:48 (Economics Reflection, Interactive Q&A & Fast-Finisher Options)**:
+              *"Look at this soaring trend chart of TSMC on the big screen! Connecting back to your freshman Economics: *'What market signals or supply-and-demand shifts explain this massive stock rally over the past year? Any thoughts?'*
+              (Invite 1-2 students to share briefly)
+              *Spot on! Generative AI created an unprecedented global demand shock for computing power. Our Python code is not just drawing lines—it visualizes real-world economic dynamics!*
+              While everyone finishes their execution, here are two quick micro-options for fast finishers:
               - **Option A (Tweak Parameters)**: Change `period='1y'` to `'5y'` to view a 5-year macro trend, or replace `'2330.TW'` with NVIDIA (`'NVDA'`).
               - **Option B (Ask Gemini)**: Switch to your Gemini tab and ask: *'Explain 3 key business factors driving TSMC's stock price over the past year.'*
               In our next session, you will officially customize this code in Lab 0!"*
