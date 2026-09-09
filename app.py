@@ -136,6 +136,8 @@ if selected_week == "Week 1":
               *"Review our grading: 50% weekly practice, 20% midterm in Week 9, and 30% Final Showcase in Week 16.
               For our Final Showcase, we encourage **Pair Projects (teams of 2)**. To ensure everyone feels supported and no one is left behind, teams can be flexible: you may work **individually (1 person)**, as a **pair (2 people)**, or form a group of **3 people maximum** if there's an odd number.
               In Week 15, right before Demo Day, our 3rd session will be a hands-on project clinic and rehearsal to ensure your app is secure and ready!"*
+            * **09:35 - 09:40 (Inspiration & Streamlit Showcase)**:
+              *"Everything you see on your phone right now was built with pure Python and **Streamlit**! You don't need any prior coding background. We will start gently with Google Colab, and by Weeks 10 & 11, you will build and launch your very own live web apps on your phones!"*
             * **09:40 - 09:48**: *"Let's expand the 18-week schedule. Notice Week 9 Midterm Review, Week 11 Cloud Deployment, and Week 16 Final Showcase."*
             * **09:48 - 09:50**: *"10-minute break. At 10:00, we scroll down to open Google Colab!"*
             """)
