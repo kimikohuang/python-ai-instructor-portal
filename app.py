@@ -159,7 +159,8 @@ if selected_week == "Week 1":
         with col_a:
             st.markdown("#### ⏱️ 時間軸與中文授課導引")
             st.markdown("""
-            * **10:00 - 10:15 ｜ Google 帳號、鍵盤快捷鍵暖身與 Pair Programming**
+            * **10:00 - 10:15 ｜ 雲端環境開箱、透通式耳機、AI 語音輸入密技與 Pair Programming**
+              * *黑科技分享（語音輸入）*：引導同學示範用「嘴巴說」來代替打字。介紹 **透通式耳機 (Transparency Earphones)** 的好處——戴著它可以跟 Gemini 語音對話（小聲說微氣音 Micro-whisper），同時又能聽見老師講課與隔壁戰友的討論，實現最高效的人機協作！
               * *鍵盤暖身*：說明打字與快捷鍵是跟 AI 高效溝通的超能力。帶大家複習 Windows (`Ctrl`) 與 Mac (`Cmd ⌘`) 的核心捷徑：
                 * 複製 `Ctrl/Cmd + C`、貼上 `Ctrl/Cmd + V`、剪下 `Ctrl/Cmd + X`
                 * **救命鍵（復原）**：`Ctrl/Cmd + Z`（代碼改壞或刪掉時一鍵還原）
@@ -169,9 +170,9 @@ if selected_week == "Week 1":
               * *引導說明*：開另一個分頁放 Google Gemini。Colab 內建 AI 額度用完或遇到複雜報錯時，用快捷鍵 `Ctrl/Cmd + C` 複製貼到 Gemini，確保實作不中斷。
             * **10:25 - 10:40 ｜ 現場 Live Demo：自然語言 Prompt ➔ 4 行 Python ➔ Shift+Enter 執行**
               * *操作步驟*：
-                1. 老師投影大螢幕，打開學生端網頁的「Live Demo 折疊區」。
+                1. 老師投影大螢幕，打開學生端網頁的錄影或「Live Demo 折疊區」。
                 2. 念出提示詞（Prompt）：*「請用 yfinance 抓取台積電 2330.TW 過去一年股價並畫圖」*，向同學說明這就是我們跟 AI 溝通的方式。
-                3. 點擊代碼右上角「複製」，在另一個分頁打開全新的 Google Colab。
+                3. 點擊代碼右上角錄影「複製」，在另一個分頁打開全新的 Google Colab。
                 4. 在 Colab 儲存格按 `Ctrl+V` (或 `Cmd+V`) 貼上。
                 5. 雙手離開滑鼠，口頭帶全班一起大聲倒數：「按下 **Shift + Enter**！」
                 6. 幾秒後折線圖跳出，全班感受成就感！隨後請全班跟著老師做一次。
