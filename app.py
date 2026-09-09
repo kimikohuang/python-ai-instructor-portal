@@ -125,28 +125,25 @@ if selected_week == "Week 1":
         with col_b:
             st.markdown("#### 🗣️ English Teaching Scripts")
             st.info("""
-            * **09:00 - 09:15 (QR & LINE Pinned Notice)**:
-              *"Good morning everyone, welcome to Python AI Applications! Look at the top-right of the screen. Scan the left QR code for our portal, and the right QR code to join our LINE OpenChat right now."*
-              *(After joining)*:
-              *"Everyone, please open our **Pinned Announcement** in LINE:
-              1. **Classroom**: Innovation Building, Room 506 every Thursday.
-              2. **Required Devices**: Bring your **laptop** (for cloud coding) and **smartphone** every single week.
-              3. **Milestones**: 50% weekly practice, 20% midterm in Week 9, and **30% Final Showcase in Week 16 (Dec 24)**. Weeks 17-18 will be flexible independent study.
-              4. **Office Hours**: You can talk to me directly right after class in Room 506, or message in this LINE chat to set up an on-campus meeting. Email: `kimikohuang@mail.mcut.edu.tw`.
-              5. **Nickname Rule**: Change your LINE nickname right now to **'Last 3 digits of Student ID + Name'** (e.g. `205 Huy`). We use this for attendance and participation points!"*
-            * **09:15 - 09:25**: *"Notice the language buttons below the title—the syllabus adapts to 7 languages instantly. In the sidebar, our Course AI Assistant is ready. Asking questions earns engagement points!"*
-            * **09:25 - 09:35 (Conductor Mindset, Interactive Discussion & Pair Teams)**:
-              *"Review our core cards on screen. Adopt the **Conductor Mindset**: AI is your orchestra, and you lead it using natural language prompts without memorizing syntax.
-              Before we talk about teams, let me ask: *'In the era of AI, do you think it is more powerful to code alone, or to collaborate in pairs? Any thoughts?'*
-              (Invite 1-2 students to share briefly)
-              *Exactly! When coding alone, you can easily get tunnel vision with your prompts. In a pair, one acts as the Product Owner focusing on business logic, while the other inspects the code and UI. Two human minds leading one AI create the best results!*
-              That's why our grading is: 50% weekly practice, 20% midterm in Week 9, and 30% Final Showcase in Week 16.
-              For our Final Showcase, we encourage **Pair Projects (teams of 2)**. To ensure everyone feels supported and no one is left behind, teams are flexible: you may work **individually (1 person)**, as a **pair (2 people)**, or form a group of **3 people maximum** if there's an odd number.
-              In Week 15, right before Demo Day, our 3rd session will be a hands-on project clinic and rehearsal to ensure your app is secure and ready!"*
-            * **09:35 - 09:40 (Inspiration & Streamlit Showcase)**:
-              *"Everything you see on your phone right now was built with pure Python and **Streamlit**! You don't need any prior coding background. We will start gently with Google Colab, and by Weeks 10 & 11, you will build and launch your very own live web apps on your phones!"*
-            * **09:40 - 09:48**: *"Let's expand the 18-week schedule. Notice Week 9 Midterm Review, Week 11 Cloud Deployment, and Week 16 Final Showcase."*
-            * **09:48 - 09:50**: *"10-minute break. At 10:00, we scroll down to open Google Colab!"*
+            * **10:00 - 10:15 (Cloud Setup, Transparency Earphones & Voice Prompting)**:
+              *"Welcome back! Before we code, let's unlock the ultimate AI productivity hack: **Voice Prompting**. 
+              If you have **transparency-mode earphones**, wear them now! You can micro-whisper your prompts directly to Gemini without typing, saving tons of time, while still hearing my lecture and your partner's ideas clearly.
+              Now let's review our core keyboard shortcuts:
+              - **Copy / Paste**: `Ctrl + C` / `Ctrl + V` on Windows, or `Cmd ⌘ + C` / `Cmd ⌘ + V` on Mac.
+              - **The Life Saver (Undo)**: `Ctrl + Z` or `Cmd ⌘ + Z` if you accidentally delete code!
+              - **Colab Instant Run**: Press `Shift + Enter` to run any code cell instantly.
+              If you don't have a laptop today, pair up with the classmate next to you for **Pair Programming**."*
+            * **10:15 - 10:25**: *"Keep a separate tab open for **Google Gemini**. When Colab's AI hits its usage quota, copy your code with `Ctrl+C` and paste into Gemini with `Ctrl+V`!"*
+            * **10:25 - 10:40 (Step-by-Step Live Demo)**:
+              *"Look at the main screen. In our portal, we have the prompt: 'Fetch TSMC 2330.TW for 1 year and plot closing price'. That is all you say to AI!
+              Now watch closely: I copy this 4-line code, switch to Google Colab, paste it in with `Ctrl+V`, and without touching the mouse, I press **Shift + Enter**!
+              Look at the screen—in 3 seconds, a real financial trend chart appears. Now, open your Colab and do the exact same thing together with me!"*
+            * **10:40 - 10:48 (Economics Reflection, Interactive Q&A & Fast-Finisher Options)**:
+              *"Look at this soaring curve of TSMC. Connecting back to your freshman Economics: what market signals or supply-and-demand shifts explain this massive rally?
+              (Encourage 1-2 hands)
+              Spot on! Generative AI created an unprecedented demand shock for computing power.
+              For fast teams: tweak `period='1y'` to `'5y'` to view the multi-year cycle, or ask Gemini to outline 3 macro catalysts behind this chart!"*
+            * **10:48 - 10:50**: *"Take a short break. Any Wi-Fi issues, come to the front desk now!"*
             """)
 
     # --------------------------------------------------------------------------
