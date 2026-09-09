@@ -1,6 +1,6 @@
 # ==============================================================================
 # [Script] Instructor-Side Secure Script & Teaching Prompt Portal
-# 【教師專屬】講稿與課堂導引主控台（整合 Streamlit 激勵講稿與逐區導航）
+# 【教師專屬】講稿與課堂導引主控台（整合 LINE 公告逐條導讀與雙語講稿）
 # ==============================================================================
 
 import streamlit as st
@@ -38,7 +38,7 @@ if not check_password():
 # 主控制台介面
 # ------------------------------------------------------------------------------
 st.title("🗝️ 教師專屬講稿與課堂提示控制台")
-st.caption("🎯 課堂進程：Part 1 觀念與網頁導覽 ➔ Part 2 雲端環境與 Live Demo ➔ Part 3 Lab 0 實作與 AI 互動")
+st.caption("🎯 課堂進程：Part 1 觀念、LINE 公告逐項解說與導覽 ➔ Part 2 雲環境與 Live Demo ➔ Part 3 Lab 0 實作與雙軌 AI")
 
 st.markdown("---")
 
@@ -46,19 +46,19 @@ with st.sidebar:
     st.header("📌 導航控制台")
     selected_week = st.selectbox("選擇上課週次", [f"Week {i}" for i in range(1, 19)])
     st.markdown("---")
-    st.markdown("**💡 第一節開場提醒**：")
-    st.info("大螢幕投影學生端入口網頁（ai-syllabus.streamlit.app），由上而下介紹雙 QR Code、多語系、四大卡片，並運用『本網站即為 Streamlit 打造』作為學習動機激勵！")
+    st.markdown("**💡 第一節開場關鍵提醒**：")
+    st.info("大螢幕投影學生端入口網頁（ai-syllabus.streamlit.app）。引導掃描右上角 LINE Chat QR 後，請帶領全班點開置頂公告，逐條說明教室、必備筆電/手機、信箱與改暱稱規則！")
     if st.button("🔒 鎖定返回登入頁"):
         st.session_state["password_correct"] = False
         st.rerun()
 
 if selected_week == "Week 1":
     st.header("📅 Week 1: 課程導覽與自然語言編程 (Course Onboarding & Vibe Coding)")
-    st.markdown("🕒 **授課時間**：09:00 - 11:50 ｜ 📍 **實體教室**")
+    st.markdown("🕒 **授課時間**：09:00 - 11:50 ｜ 📍 **上課地點**：創新大樓 506 教室 (創506)")
     
     tab1, tab2, tab3 = st.tabs([
-        "Part 1 ｜ 破冰與網頁逐區導航 (09:00 - 09:50)", 
-        "Part 2 ｜ 雲環境與 Live Demo (10:00 - 10:50)", 
+        "Part 1 ｜ 破冰、LINE 公告逐條解說與網頁導航 (09:00 - 09:50)", 
+        "Part 2 ｜ 雲環境、快捷鍵與 Live Demo (10:00 - 10:50)", 
         "Part 3 ｜ Lab 0 實作與雙軌 AI (11:00 - 11:50)"
     ])
     
@@ -66,45 +66,75 @@ if selected_week == "Week 1":
     # TAB 1: 第一節課（09:00 - 09:50）
     # --------------------------------------------------------------------------
     with tab1:
-        st.subheader("🎙️ Part 1：破冰、學生端網頁逐區拆解導覽與評量說明 (學校第 2 節：09:00 - 09:50)")
+        st.subheader("🎙️ Part 1：破冰、LINE 社群公告逐項解說與網頁導覽 (學校第 2 節：09:00 - 09:50)")
+        
+        # 內嵌 LINE 公告全文供老師現場對照
+        with st.expander("📋 LINE 社群置頂公告全文（現場逐條對照）", expanded=True):
+            st.code("""
+📌 [Python AI Applications] Course Information & Essential Links
+
+Welcome to Python AI Applications! Please read the following key details and bookmark this post:
+
+📍 Classroom: Innovation Building, Room 506 (創506) | Thursdays 09:00 - 11:50
+🎒 Required Devices for Every Class:
+   1. Laptop / Notebook (Required): Used for cloud coding with Google Colab.
+   2. Smartphone: Used for LINE chat, real-time AI Q&A, and mobile app preview.
+🔗 Course Portal: https://ai-syllabus.streamlit.app/
+💻 In-Class Cloud Tools:
+   • Google Colab: https://colab.research.google.com/
+   • Google Gemini: https://gemini.google.com/
+✉️ Official Contact Email: kimikohuang@mail.mcut.edu.tw
+⚠️ Group Nickname Policy:
+   Please set your nickname as: 👉 "Last 3 digits of Student ID + Your Name" (e.g. 205 Huy)
+   *Required to verify attendance and log bonus participation points.*
+            """, language="text")
+
         col_a, col_b = st.columns(2)
         
         with col_a:
             st.markdown("#### ⏱️ 時間軸與中文授課導引")
             st.markdown("""
-            * **09:00 - 09:12 ｜ 破冰與頂部雙 QR Code 引導**
-              * *操作重點*：指著大螢幕右上角的兩個 QR Code。
-              * *引導說明*：請大家拿出手機或筆電，掃描左邊 **Portal QR** 收藏本學期互動課綱；掃描右邊 **LINE Chat** 加入課程專屬社群。
-            * **09:12 - 09:20 ｜ 多語系切換與側邊欄 AI 助教介紹**
-              * *操作重點*：大螢幕示範點擊切換越南語、印尼語、泰語等按鈕。
-              * *引導說明*：強調課程全面支援多語系；接著展開左側邊欄 **Course AI Assistant**，說明無論用任何語言提問都會被記錄在試算表中算平常參與加分，也能選「Anonymous」匿名提問。
-            * **09:20 - 09:30 ｜ 拆解四大核心卡片與指揮家思維**
-              * *卡片 1 (目標)*：串聯大一會計與經濟，為大二統計、行銷與管理做數據支撐。
-              * *指揮家思維*：強調不需要死背 Python 語法，把 AI 當成整個交響樂團，我們當負責下提示詞指令的「指揮家」。
-              * *卡片 2 (評量)*：每週上機 50%、期中 20%、期末 30%，無壓力步驟化學習。
-              * *卡片 3 & 4 (教材與規範)*：全雲端 Colab 免安裝；提醒 LINE 暱稱設為「學號末三碼 + 名字」（如 205 Huy）。
-            * **09:30 - 09:40 ｜ 激勵亮點：展示 Streamlit 網頁力量**
-              * *操作重點*：向同學展示目前正在操作的課綱網頁。
-              * *引導說明*：大家現在手機上看到的整個課綱網頁、AI 助教、多語系切換，全都是老師用純 Python 和 Streamlit 打造並發布到雲端的！大家前幾週先在 Google Colab 輕鬆玩數據；到了第 10、11 週，老師會手把手帶大家把自己的分析成果變成像這樣的公開網頁！
-            * **09:40 - 09:45 ｜ 點開「18 週課綱進度總表」宏觀瀏覽**
-              * *操作重點*：在大螢幕點開 18 週折疊表，帶學生看全學期里程碑。
-              * *引導說明*：重點指出第 9 週期中進度報告、第 11 週發布手機 Web App、第 17-18 週期末成果發表。
-            * **09:45 - 09:50 ｜ 第一節收尾與下課休息**
-              * *引導說明*：解答疑問。預告 10:00 準時進入下方「本週實作指引」，進行 Google Colab 雲端開箱。
+            * **09:00 - 09:15 ｜ 破冰、雙 QR Code 與 LINE 置頂公告逐條導讀**
+              * *操作重點*：指著大螢幕右上角的 **Portal QR** 與 **LINE Chat QR**，請全班拿手機掃描。
+              * *逐條帶讀 LINE 公告*：
+                1. **教室確認**：本課程固定在「創新大樓 506 教室 (創506)」。
+                2. **每週必備設備**：強調每週務必攜帶 **筆電（跑 Colab 實作）** 與 **手機（LINE 與行動 App 成果預覽）**；今天未帶筆電者稍後安排 Pair Programming。
+                3. **傳送門與工具**：介紹 Portal 網址、Google Colab 與 Google Gemini。
+                4. **聯絡管道**：一般問題在 LINE 群直接問；隱私與成績寄至官方信箱 `kimikohuang@mail.mcut.edu.tw`。
+                5. **群組暱稱規範（最重要）**：現場監督全班將暱稱改成「學號末三碼 + 名字」（如：`205 Huy`），說明這是點名出缺席與平常發問加分的唯一依據！
+            * **09:15 - 09:25 ｜ 多語系切換與側邊欄 AI 助教演練**
+              * *操作重點*：現場點擊 Vietnamese、Indonesian 等按鈕展示瞬切多語系。
+              * *引導說明*：展開左側邊欄 **Course AI Assistant**，說明提問能拿加分，支援 7 國語言與匿名模式。
+            * **09:25 - 09:35 ｜ 四大核心卡片與指揮家思維**
+              * *卡片導覽*：串聯大一會計經濟、大二統計管理；50% 上機、20% 期中、30% 期末。
+              * *指揮家思維*：不背語法，用自然語言 prompt 當樂團指揮家。
+            * **09:35 - 09:40 ｜ 激勵亮點：展示 Streamlit 網頁力量**
+              * *激勵說明*：大家手機上的整個課綱網頁與 AI 助教，都是老師用純 Python + Streamlit 做的！前幾週在 Colab 打基礎，第 10-11 週大家也能做出自己的 Web App 發布到手機上。
+            * **09:40 - 09:48 ｜ 點開「18 週課綱進度總表」看全學期里程碑**
+              * *操作重點*：大螢幕展開總表，指出第 9 週期中報告、第 11 週雲端部署、第 17-18 週期末成果會。
+            * **09:48 - 09:50 ｜ 第一節收尾與課間休息**
+              * *預告*：10:00 第二節準時開箱 Google Colab 與鍵盤快捷鍵。
             """)
             
         with col_b:
             st.markdown("#### 🗣️ English Teaching Scripts")
             st.info("""
-            * **09:00 - 09:12**: *"Good morning everyone, welcome to Python AI Applications! Look at the top-right corner of our screen: scan the left QR code to save our course portal, and scan the right one to join our class LINE group."*
-            * **09:12 - 09:20**: *"Notice the language buttons below the title. Clicking Vietnamese, Indonesian, or Thai adapts the whole syllabus instantly. In the left sidebar, our Course AI Assistant is ready. Asking questions earns engagement points, and anonymous mode is available."*
-            * **09:20 - 09:30**: *"Let's look at the cards. Adopt the **Conductor Mindset**: AI is your orchestra, and you guide it with natural language prompts. Our grading: 50% weekly lab, 20% midterm, and 30% final project."*
-            * **09:30 - 09:40 (Inspiration)**: *"Everything you see on your phone right now—this interactive portal, the live multi-language switch, the sidebar AI—was built entirely using pure Python and **Streamlit**! You don't need any prior coding background. We will start gently with Google Colab, and by Weeks 10 & 11, you will build and launch your very own live web applications on your phones!"*
-            * **09:40 - 09:45**: *"Let's expand the 18-week schedule. Notice our key milestones: Week 9 Midterm Review, Week 11 Cloud App Deployment, and Weeks 17-18 for the Final FinTech Showcase."*
-            * **09:45 - 09:50**: *"We will take a 10-minute break. When we return at 10:00, we will open Google Colab together!"*
+            * **09:00 - 09:15 (QR & LINE Pinned Notice)**:
+              *"Good morning everyone, welcome to Python AI Applications! Look at the top-right of the screen. Scan the left QR code for our course portal, and scan the right one to join our LINE OpenChat right now."*
+              *(Once students join)*:
+              *"Everyone, please open our **Pinned Announcement** in LINE. Let's go through it together:
+              1. **Classroom**: We will meet here in Innovation Building Room 506 every Thursday.
+              2. **Required Devices**: Bring your **laptop** (for Colab coding) and your **smartphone** every single week. If you didn't bring a laptop today, don't worry—we will do pair programming later.
+              3. **Contact Email**: For private grading or leave matters, email `kimikohuang@mail.mcut.edu.tw`.
+              4. **Important Nickname Rule**: Change your LINE nickname right now to **'Last 3 digits of Student ID + Your Name'** (e.g., `205 Huy`). We use this to verify attendance and award in-class engagement bonus points!"*
+            * **09:15 - 09:25**: *"Notice the language buttons below the title—clicking Vietnamese, Indonesian, or Thai changes everything instantly. In the sidebar, our Course AI Assistant is ready. Asking questions earns participation points!"*
+            * **09:25 - 09:35**: *"Review our 4 cards. Adopt the **Conductor Mindset**: AI is your orchestra, and you conduct it with prompts. Grading: 50% weekly practice, 20% midterm, 30% final."*
+            * **09:35 - 09:40 (Motivation)**: *"Everything you see on your phone right now was built with pure Python and **Streamlit**! In Weeks 10 & 11, you will build and launch your very own live web apps on your phones."*
+            * **09:40 - 09:48**: *"Let's expand the 18-week schedule. Notice Week 9 Midterm Review, Week 11 Cloud Deployment, and Weeks 17-18 Final FinTech Showcase."*
+            * **09:48 - 09:50**: *"10-minute break. At 10:00, we scroll down to open Google Colab!"*
             """)
 
-# --------------------------------------------------------------------------
+    # --------------------------------------------------------------------------
     # TAB 2: 第二節課（10:00 - 10:50）
     # --------------------------------------------------------------------------
     with tab2:
@@ -117,7 +147,7 @@ if selected_week == "Week 1":
             * **10:00 - 10:15 ｜ Google 帳號、鍵盤快捷鍵暖身與 Pair Programming**
               * *鍵盤暖身*：說明打字與快捷鍵是跟 AI 高效溝通的超能力。帶大家複習 Windows (`Ctrl`) 與 Mac (`Cmd ⌘`) 的核心捷徑：
                 * 複製 `Ctrl/Cmd + C`、貼上 `Ctrl/Cmd + V`、剪下 `Ctrl/Cmd + X`
-                * **救命鍵（復原）**：`Ctrl/Cmd + Z`（代碼改壞或刪掉時不用慌！）
+                * **救命鍵（復原）**：`Ctrl/Cmd + Z`（代碼改壞或刪掉時一鍵還原）
                 * **Colab 執行神鍵**：`Shift + Enter`（免按滑鼠，一鍵跑程式）
               * *Pair Programming*：若沒帶電腦，兩人一組結對協作，共同下提示詞與除錯。
             * **10:15 - 10:25 ｜ 雙軌 AI 互補機制說明 (Colab + Gemini)**
@@ -133,16 +163,17 @@ if selected_week == "Week 1":
         with col_b:
             st.markdown("#### 🗣️ English Teaching Scripts")
             st.info("""
-            * **10:00 - 10:15**: *"Welcome back! Before we jump in, let's unlock some keyboard superpowers. In coding and AI prompting, your keyboard is much faster than your mouse:
+            * **10:00 - 10:15**: *"Welcome back! Let's unlock some keyboard superpowers:
               - **Copy / Paste**: `Ctrl + C` / `Ctrl + V` on Windows, or `Cmd ⌘ + C` / `Cmd ⌘ + V` on Mac.
-              - **The Life Saver (Undo)**: `Ctrl + Z` or `Cmd ⌘ + Z` if you accidentally delete your code!
+              - **The Life Saver (Undo)**: `Ctrl + Z` or `Cmd ⌘ + Z` if you accidentally delete code!
               - **Colab Instant Run**: Press `Shift + Enter` to run any code cell instantly.
-              If you don't have a laptop today, please pair up with the classmate next to you for **Pair Programming**."*
-            * **10:15 - 10:25**: *"Keep a separate browser tab open for **Google Gemini**. When Colab's built-in AI hits its quota, simply copy your code with `Ctrl+C` and paste it into Gemini with `Ctrl+V`!"*
-            * **10:25 - 10:40**: *"Look at the main screen. With just 4 lines of Python in the cloud, we fetch TSMC's daily prices (`2330.TW`) and instantly plot a trend chart."*
-            * **10:40 - 10:48**: *"Think back to freshman Economics and Accounting. In our next session, you will run this notebook yourself."*
-            * **10:48 - 10:50**: *"Take a short break. If anyone has Wi-Fi or Google login issues, come to the front desk now!"*
+              If you don't have a laptop today, pair up with the classmate next to you for **Pair Programming**."*
+            * **10:15 - 10:25**: *"Keep a separate tab open for **Google Gemini**. When Colab's AI hits its usage quota, copy your code with `Ctrl+C` and paste into Gemini with `Ctrl+V`!"*
+            * **10:25 - 10:40**: *"Look at the main screen. With 4 lines of Python, we fetch TSMC's daily prices (`2330.TW`) and plot a trend chart."*
+            * **10:40 - 10:48**: *"Think back to Economics and Accounting. In our next session, you will run this notebook yourself."*
+            * **10:48 - 10:50**: *"Take a short break. Any Wi-Fi issues, come to the front desk now!"*
             """)
+
     # --------------------------------------------------------------------------
     # TAB 3: 第三節課（11:00 - 11:50）
     # --------------------------------------------------------------------------
@@ -167,7 +198,7 @@ if selected_week == "Week 1":
         with col_b:
             st.markdown("#### 🗣️ English Teaching Scripts")
             st.info("""
-            * **11:00 - 11:15**: *"It's hands-on time! Run the TSMC script in your Colab, then try changing `2330.TW` to Apple (`AAPL`). Keep Gemini open in a separate tab as your backup AI when Colab limits are reached."*
+            * **11:00 - 11:15**: *"It's hands-on time! Run the TSMC script in Colab, then try changing `2330.TW` to Apple (`AAPL`). Keep Gemini open in a separate tab as your backup AI when Colab limits are reached."*
             * **11:15 - 11:35**: *(Walking around the classroom)* *"Great work seeing those charts appear! If you run into any red error messages, ask Gemini or our sidebar AI Assistant."*
             * **11:35 - 11:45**: *"Bonus challenge for fast learners: Ask Gemini how to plot both TSMC and Apple on the exact same graph to compare their returns!"*
             * **11:45 - 11:50**: *"Congratulations on running your first Python AI script today! Next week, we will dive deeper into Market Data Engineering. Have a great week, see you next Thursday!"*
