@@ -134,7 +134,7 @@ if selected_week == "Week 1":
               3. Grading: 50% weekly practice, 20% midterm, 30% final showcase in Week 16.
               4. LINE Nickname rule: Please rename yourself using 'Last 3 digits + Name', like '205 Huy'."*
             * **09:15 - 09:25 (Multilingual Portal Tour)**:
-              *"Look at the top of our web portal. You can switch between 7 languages instantly using the flag buttons. Whether you prefer English, Vietnamese, Indonesian, or Traditional Chinese, you have full parallel support!"*
+              *"Look at the top of our web portal. You can switch between 7 languages instantly using the flag buttons. Whether you prefer English, Vietnamese, Indonesian, or Traditional Chinese, you have full parallel support! Also, check out our sidebar AI Assistant for real-time Q&A."*
             * **09:25 - 09:35 (Conductor Mindset, Interactive Discussion & Pair Teams)**:
               *"Review our core cards on screen. Adopt the **Conductor Mindset**: AI is your orchestra, and you lead it using natural language prompts without memorizing syntax.
               Before we talk about teams, let me ask: *'In the era of AI, do you think it is more powerful to code alone, or to collaborate in pairs? Any thoughts?'*
@@ -143,9 +143,12 @@ if selected_week == "Week 1":
               That's why our grading is: 50% weekly practice, 20% midterm in Week 9, and 30% Final Showcase in Week 16.
               For our Final Showcase, we encourage **Pair Projects (teams of 2)**. To ensure everyone feels supported and no one is left behind, teams are flexible: you may work **individually (1 person)**, as a **pair (2 people)**, or form a group of **3 people maximum** if there's an odd number.
               In Week 15, right before Demo Day, our 3rd session will be a hands-on project clinic and rehearsal to ensure your app is secure and ready!"*
-            * **09:35 - 09:50 (Portal Showcase & Mindset Hype)**:
-              *"Take a look at this portal you are viewing right now—it was built entirely by me using Python and Streamlit! You will learn to build your own web apps just like this by Week 10.
-              Before we take a short break and open our laptops for Session 2, remember: **AI has completely crossed the language barrier.** 
+            * **09:35 - 09:40 (Portal Showcase)**:
+              *"Take a look at this portal you are viewing right now—it was built entirely by me using Python and Streamlit! You will learn to build your own web apps just like this and deploy them to your phone by Week 10."*
+            * **09:40 - 09:48 (18-Week Roadmap)**:
+              *"Let's briefly check our 18-week roadmap: from TSMC data engineering and FRED macro data, all the way to our final showcase in Week 16."*
+            * **09:48 - 09:50 (Mindset Hype: AI Crosses Language Barriers)**:
+              *"Before we take a short break and open our laptops for Session 2, remember: **AI has completely crossed the language barrier.** 
               Whether your native language is Vietnamese, Thai, French, or Indonesian, modern AI understands your voice effortlessly. 
               **You do not need to fear coding anymore.** The most valuable skill in the AI era is **knowing how to ask the right questions and defining your problems clearly.** 
               Speak your mind, and let AI handle the heavy lifting!"*
