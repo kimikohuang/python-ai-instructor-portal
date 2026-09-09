@@ -103,8 +103,12 @@ if selected_week == "Week 1":
                 5. **群組暱稱規範**：現場監督全班將暱稱改成「學號末三碼 + 名字」（如：`205 Huy`），這是平時點名加分的唯一依據！
             * **09:15 - 09:25 ｜ 多語系切換與側邊欄 AI 助教演練**
               * *操作重點*：展示點擊越南語、印尼語等多語系切換；展開左側邊欄 **Course AI Assistant**，說明發問拿平時加分與匿名模式。
-            * **09:25 - 09:35 ｜ 四大核心卡片與指揮家思維**
+            * **09:25 - 09:35 ｜ 四大核心卡片、結對專題 (Pair Project) 與指揮家思維**
               * *指揮家思維*：不用死背語法，我們是指揮家，AI 是演奏樂手，以自然語言 prompt 協同作業。
+              * *評量與專題機制（重要定調）*：
+                * 平常實作 50%、第 9 週期中 20%、**第 16 週 (12/24) 期末成果發表會 30%**。
+                * **期末專題採「Pair Programming 結對制（2 人一組）」**：延續課堂結對精神，一人負責商業需求與提示詞設計，一人負責介面排版與串接（亦接受 1 人獨立進行）。鼓勵同學從今天起跟身邊搭檔培養默契。
+                * **第 15 週安排**：資安防護檢查（隱藏 API Key）＋ 第三節全班專案診斷與發表彩排。
             * **09:35 - 09:40 ｜ 激勵亮點：展示 Streamlit 網頁力量**
               * *激勵說明*：眼前的手機課綱與 AI 助教全是老師用純 Python + Streamlit 打造的！前幾週在 Colab 打基礎，第 10-11 週大家也能做出自己的 Web App 發布到手機上。
             * **09:40 - 09:48 ｜ 點開「18 週進度總表」看全學期課程地圖**
@@ -126,8 +130,10 @@ if selected_week == "Week 1":
               4. **Office Hours**: You can talk to me directly right after class in Room 506, or message in this LINE chat to set up an on-campus meeting. Email: `kimikohuang@mail.mcut.edu.tw`.
               5. **Nickname Rule**: Change your LINE nickname right now to **'Last 3 digits of Student ID + Name'** (e.g. `205 Huy`). We use this for attendance and participation points!"*
             * **09:15 - 09:25**: *"Notice the language buttons below the title—the syllabus adapts to 7 languages instantly. In the sidebar, our Course AI Assistant is ready. Asking questions earns engagement points!"*
-            * **09:25 - 09:35**: *"Adopt the **Conductor Mindset**: AI is your orchestra, and you conduct it with prompts. No syntax memorization required!"*
-            * **09:35 - 09:40 (Inspiration)**: *"Everything you see on your phone right now was built with pure Python and **Streamlit**! In Weeks 10 & 11, you will build and launch your very own live web apps."*
+            * **09:25 - 09:35 (Grading & Pair Projects)**:
+              *"Review our grading: 50% weekly practice, 20% midterm in Week 9, and 30% Final Showcase in Week 16.
+              For the Final Project, we strongly encourage **Pair Projects (teams of 2)**, mirroring our Pair Programming workflow! One partner can focus on business logic and prompts, while the other refines the Streamlit UI and API pipelines. You may also work individually if you prefer.
+              In Week 15, right before Demo Day, our 3rd session will be a hands-on project clinic and rehearsal to ensure your app is secure and ready!"*            * **09:35 - 09:40 (Inspiration)**: *"Everything you see on your phone right now was built with pure Python and **Streamlit**! In Weeks 10 & 11, you will build and launch your very own live web apps."*
             * **09:40 - 09:48**: *"Let's expand the 18-week schedule. Notice Week 9 Midterm Review, Week 11 Cloud Deployment, and Week 16 Final Showcase."*
             * **09:48 - 09:50**: *"10-minute break. At 10:00, we scroll down to open Google Colab!"*
             """)
