@@ -227,12 +227,16 @@ if selected_week == "Week 1":
                 2. 將代碼中的台積電 (`2330.TW`) 改為蘋果 (`AAPL`) 或自選知名企業（如星巴克 `SBUX`、微軟 `MSFT`）。
               * *除錯演練 (SOP)*：提醒同學若遇到紅色報錯，不用驚慌，三步驟除錯：
                 * 選取紅字 ➔ `Ctrl/Cmd + C` 複製 ➔ 切換至 Gemini 貼上詢問：「請修正此錯誤並給我正確代碼」。
-            * **11:15 - 11:35 ｜ 課堂巡視、個別排解與參與記錄**
+            * **11:15 - 11:30 ｜ 課堂巡視、個別排解與參與記錄**
               * *走動指導*：協助排解 Wi-Fi 斷線或括號遺漏問題；觀察 Pair Programming 兩人的分工互動。
               * *課堂參與*：跑出圖表即代表完成 Lab 0 初體驗，鼓勵透過網站側邊欄 AI 助教提出心得或問題換取加分。
-            * **11:35 - 11:45 ｜ 快手加碼：跨國巨頭雙線對比 (TSMC vs. Apple)**
-              * *進階示範*：引導進度超前的同學向 AI 下進階 Prompt：「如何用 Python 同時繪製 TSMC 與 Apple 過去一年的走勢對比？」，體驗多資產比較的視覺威力。
-            * **11:45 - 11:50 ｜ 首日總結、設備叮嚀與 Office Hours 提醒**
+            * **11:30 - 11:40 ｜ 【課堂互動提問：會計營收結構】與快手加碼 (TSMC vs. Apple)**
+              * *課堂互動提問（啟發思考）*：
+                * 現場邀請換成蘋果 (`AAPL`) 或星巴克 (`SBUX`) 的同學抬頭分享：「誰的走勢圖跟台積電長得截然不同？從大家學過的【會計與商業模式】來看，B2B 晶圓代工與 B2C 消費終端的營收結構有何本質差異？」
+                * *老師收攏點評*：台積電是賣武器給淘金客的企業（B2B 資本支出），受惠於雲端與科技巨頭的算力建置；而消費品直接面對一般大眾（B2C 消費支出），會受通膨與大眾消費意願牽動。圖表不只是程式，更是企業會計與獲利體質的鏡子！
+              * *快手加碼 (Bonus Challenge)*：
+                * 引導進度超前的同學向 AI 下進階 Prompt：「如何用 Python 同時繪製 TSMC 與 Apple 過去一年的走勢對比？」，體驗多資產比較的視覺威力。
+            * **11:40 - 11:50 ｜ 首日總結、設備叮嚀與 Office Hours 提醒**
               * *肯定成果*：恭喜全班在第一天就成功使用自然語言跑出雲端數據圖表。
               * *下週叮嚀*：下週進入第二週「市場數據工程：Apple 與 TSMC 的深入對比」，每週務必攜帶筆電與手機。
               * *下課諮詢*：有任何選課、設備或個人問題，老師留在 506 教室接受個別諮詢。
@@ -247,11 +251,14 @@ if selected_week == "Week 1":
               1. Copy the red text with `Ctrl/Cmd + C`.
               2. Switch to Gemini and paste with `Ctrl/Cmd + V`.
               3. Ask: *'Fix this error and give me working code.'* Never worry about bugs—AI has your back!"*
-            * **11:15 - 11:35 (Hands-on Walkthrough)**:
+            * **11:15 - 11:30 (Hands-on Walkthrough)**:
               *(Walking around)* *"Fantastic charts! Look at those prices updating in real time. If you have questions or want bonus engagement points, drop a question in our Course AI Assistant in the sidebar."*
-            * **11:35 - 11:45 (Bonus Challenge: Dual Asset Comparison)**:
-              *"For teams who already finished: ask Gemini: *'How can I plot both TSMC and Apple on the same chart using yfinance?'* See if you can visualize who outperformed over the past 12 months!"*
-            * **11:45 - 11:50 (Wrap-up & Office Hours)**:
+            * **11:30 - 11:40 (Interactive Q&A: Accounting & Business Models)**:
+              *"Who changed their ticker to Apple or Starbucks? Does your trend look very different from TSMC? Connecting to Accounting: *'Why do B2B infrastructure firms behave so differently from B2C consumer giants in their revenue models?'*
+              (Invite a student to share briefly)
+              *Brilliant observation! TSMC sells the infrastructure to enterprises (B2B capex), whereas consumer brands depend directly on consumer sentiment and inflation (B2C). Our charts are the living reflection of corporate financial realities!*
+              For teams who already finished: ask Gemini: *'How can I plot both TSMC and Apple on the same chart using yfinance?'* See if you can visualize who outperformed over the past 12 months!"*
+            * **11:40 - 11:50 (Wrap-up & Office Hours)**:
               *"Big round of applause to everyone! You officially ran your first cloud Python program today without getting stuck in syntax.
               Next Thursday at 09:00, we dive into **Market Data Engineering: Apple & TSMC**. Remember to bring your laptop and smartphone every week.
               I will be right here in Room 506 after class if anyone has course enrollment or setup questions. Have a wonderful week!"*
