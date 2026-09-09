@@ -102,28 +102,25 @@ if selected_week == "Week 1":
                 1. **教室地點**：創新大樓 506 教室 (創506)。
                 2. **每週必備設備**：每週帶 **筆電（跑 Colab）** 與 **手機（LINE 與行動 App 成果預覽）**；耳機麥克風建議自備（Optional）。
                 3. **三大評量里程碑**：平常實作 50%、第 9 週期中評量 20%、**第 16 週 (12/24) 期末成果發表會 30%**（特別提醒 17-18 週為彈性自主學習）。
-                4. **諮詢時間 (Office Hours)**：每週四下課後直接在 506 教室面談，或隨時在 LINE 群預約校內見面；公務信箱為 `kimikohuang@mail.mcut.edu.tw`。
-                5. **群組暱稱規範**：現場監督全班將暱稱改成「學號末三碼 + 名字」（如：`205 Huy`），這是平時點名加分的唯一依據！
+                4. **選課對象與語言通融**：全校跨系所、各年級與研究所皆可修；英文講授為主、中文輔助，若需要增加其他國家語言支援，隨時在助教區提出。
+                5. **群組暱稱規範**：現場監督全班將暱稱改成「學號末三碼 + 名字」（如：`205 Huy`），這是平時點名加分的依據！
             * **09:15 - 09:25 ｜ 多語系切換與側邊欄 AI 助教演練**
               * *操作重點*：展示點擊越南語、印尼語等多語系切換；展開左側邊欄 **Course AI Assistant**，說明發問拿平時加分與匿名模式。
             * **09:25 - 09:35 ｜ 四大核心卡片、結對專題 (Pair Project) 與指揮家思維**
               * *指揮家思維*：不用死背語法，我們是指揮家，AI 則是演奏樂手，以自然語言 prompt 協同作業。
               * *課堂互動提問（啟發思考）*：
                 * 現場邀請 1～2 位同學分享想法：「大家覺得在 AI 時代寫程式，是一個人自己默默做比較好，還是兩個人結對 (Pair) 協作比較好？為什麼？」
-                * *老師收攏點評*：一個人單打獨鬥時，常常會陷入提示詞 (Prompt) 的思考盲點，或被一個小小符號卡住；兩個人一起，一人負責商業需求與提問邏輯 (Product Owner)，一人把關程式與介面排版 (Builder)，這種人機＋雙人協作才是企業最需要的模式！
-              * *評量與專題機制（重要定調）*：
-                * 平常實作 50%、第 9 週期中 20%、**第 16 週 (12/24) 期末成果發表會 30%**。
-                * **期末專題採「結對彈性制（原則 2 人，可 1~3 人）」**：
-                  - 原則上鼓勵 2 人一組搭檔，實踐 Pair Programming 雙人協作。
-                  - 充分包容：若想獨立完成可 1 人一組；若有落單或奇數情況，開放 3 人一組（上限 3 人，全員均需有分工），確保完全沒有人被孤立！
-                * **第 15 週安排**：資安防護檢查（隱藏 API Key）＋ 第三節全班專案診斷與發表彩排。
+                * *老師收攏點評*：一個人單打獨鬥容易陷在思考盲點；兩個人一起，一人負責商業需求與提問邏輯 (Product Owner)，一人把關程式與排版 (Builder)，這種人機＋雙人協作才是企業最需要的模式！
+              * *期末專題機制*：採「結對彈性制（原則 2 人，可 1~3 人）」，充分包容、沒有人被孤立。
             * **09:35 - 09:40 ｜ 激勵亮點：展示 Streamlit 網頁力量**
-              * *激勵說明*：眼前的手機課綱與 AI 助教全是老師用純 Python + Streamlit 打造的！前幾週在 Colab 打基礎，第 10-11 週大家也能做出自己的 Web App 發布到手機上。
-            * **09:40 - 09:48 ｜ 點開「18 週進度總表」看全學期課程地圖**
-              * *操作重點*：展開 18 週表，指出台積電數據工程、FRED 總經、Google AI Studio、財報法說會解析，直到第 16 週發表會。
+              * *激勵說明*：眼前的課綱與 AI 助教全是老師用純 Python + Streamlit 打造的！第 10-11 週大家也能做出自己的 Web App 發布到手機上。
+            * **09:40 - 09:48 ｜ 點開「18 週進度總表」看全學期課程地圖 與【第一節快手加碼】**
+              * *操作重點*：展開下方「18-Week Teaching Scripts & Breakdown」，逐週為同學勾勒整學期學習輪廓。
+              * *快手加碼 (Fast-Finisher Options)*：針對早早就定位、迅速看完說明的快手同學：
+                * **Option A（多語系切換實測）**：點擊網頁頂部 7 國語言按鈕（越南語、印尼語、泰語等），體驗雙語對照排版。
+                * **Option B（側邊欄 AI 發問初體驗）**：提早展開側邊欄，用任何語言發問一題關於成績或選課的問題，實測即時回應並搶先登錄平時參與加分！
             * **09:48 - 09:50 ｜ 破除恐懼的心態喊話：AI 跨越語言障礙與提問本質**
-              * *精神喊話*：告訴同學現代 AI 的語音辨識與自然語言處理已經跨越了語言門檻。無論用越南語、泰語、法語或印尼語，用母語語音輸入效果都極佳。
-              * *核心心法*：在 AI 時代「不需要比打字快、不需要死背語法」。最重要的是**「學會提出正確的問題、把商業邏輯定義清楚」**。用最熟悉的方式把想法說出來，AI 就是最強大的技術執行長。
+              * *核心心法*：現代 AI 跨越了語言門檻。最重要的是**「學會提出正確的問題、把商業邏輯定義清楚」**，AI 就是最強大的執行長。
             """)
             
         with col_b:
@@ -131,11 +128,12 @@ if selected_week == "Week 1":
             st.info("""
             * **09:00 - 09:15 (Ice-breaking & QR Code Scan)**:
               *"Good morning everyone! Welcome to Python AI Applications. Please take out your smartphones right now and scan the two QR codes on the main screen: one for our syllabus portal, and one for our official LINE group chat.
-              Let's quickly review our 4 key rules on LINE:
+              Let's quickly review our key rules:
               1. Classroom: Room 506, Innovation Building.
               2. Required devices: Laptop for cloud coding, smartphone for mobile preview. Headsets are recommended but optional.
               3. Grading: 50% weekly practice, 20% midterm, 30% final showcase in Week 16.
-              4. LINE Nickname rule: Please rename yourself using 'Last 3 digits + Name', like '205 Huy'."*
+              4. Open Eligibility: Open to all majors, levels, and graduate students. Local and international students are warmly welcomed!
+              5. LINE Nickname rule: Please rename yourself using 'Last 3 digits + Name', like '205 Huy'."*
             * **09:15 - 09:25 (Multilingual Portal Tour)**:
               *"Look at the top of our web portal. You can switch between 7 languages instantly using the flag buttons. Whether you prefer English, Vietnamese, Indonesian, or Traditional Chinese, you have full parallel support! Also, check out our sidebar AI Assistant for real-time Q&A."*
             * **09:25 - 09:35 (Conductor Mindset, Interactive Discussion & Pair Teams)**:
@@ -143,18 +141,16 @@ if selected_week == "Week 1":
               Before we talk about teams, let me ask: *'In the era of AI, do you think it is more powerful to code alone, or to collaborate in pairs? Any thoughts?'*
               (Invite 1-2 students to share briefly)
               *Exactly! When coding alone, you can easily get tunnel vision with your prompts. In a pair, one acts as the Product Owner focusing on business logic, while the other inspects the code and UI. Two human minds leading one AI create the best results!*
-              That's why our grading is: 50% weekly practice, 20% midterm in Week 9, and 30% Final Showcase in Week 16.
-              For our Final Showcase, we encourage **Pair Projects (teams of 2)**. To ensure everyone feels supported and no one is left behind, teams are flexible: you may work **individually (1 person)**, as a **pair (2 people)**, or form a group of **3 people maximum** if there's an odd number.
-              In Week 15, right before Demo Day, our 3rd session will be a hands-on project clinic and rehearsal to ensure your app is secure and ready!"*
+              For our Final Showcase, we encourage **Pair Projects (teams of 1-3)** so that no one is left behind."*
             * **09:35 - 09:40 (Portal Showcase)**:
               *"Take a look at this portal you are viewing right now—it was built entirely by me using Python and Streamlit! You will learn to build your own web apps just like this and deploy them to your phone by Week 10."*
-            * **09:40 - 09:48 (18-Week Roadmap)**:
-              *"Let's briefly check our 18-week roadmap: from TSMC data engineering and FRED macro data, all the way to our final showcase in Week 16."*
+            * **09:40 - 09:48 (18-Week Roadmap & Fast-Finisher Options)**:
+              *"Let's check our 18-week roadmap: from TSMC data engineering and FRED macro data, all the way to our final showcase in Week 16.
+              For fast teams who are already ready:
+              - **Option A**: Try switching between different languages at the top of our portal.
+              - **Option B**: Open the sidebar AI assistant right now and ask your first test question to earn early participation bonus points!"*
             * **09:48 - 09:50 (Mindset Hype: AI Crosses Language Barriers)**:
-              *"Before we take a short break and open our laptops for Session 2, remember: **AI has completely crossed the language barrier.** 
-              Whether your native language is Vietnamese, Thai, French, or Indonesian, modern AI understands your voice effortlessly. 
-              **You do not need to fear coding anymore.** The most valuable skill in the AI era is **knowing how to ask the right questions and defining your problems clearly.** 
-              Speak your mind, and let AI handle the heavy lifting!"*
+              *"Remember: **AI has completely crossed the language barrier.** The most valuable skill in the AI era is **knowing how to ask the right questions and defining your problems clearly.** Speak your mind, and let AI handle the heavy lifting!"*
             """)
 
         # ----------------------------------------------------------------------
@@ -343,7 +339,7 @@ if selected_week == "Week 1":
                         st.markdown(f"- **Summary**: *\"{item['en_sum']}\"*")
 
     # --------------------------------------------------------------------------
-    # TAB 2: 第二節課（10:00 - 10:50）—— 完整細節 100% 還原！
+    # TAB 2: 第二節課（10:00 - 10:50）—— 完整細節與快手加碼 Options 100% 還原！
     # --------------------------------------------------------------------------
     with tab2:
         st.subheader("🎙️ Part 2：雲端開箱、鍵盤快捷鍵、台積電 Live Demo 與 Pair Programming (學校第 3 節：10:00 - 10:50)")
@@ -373,9 +369,9 @@ if selected_week == "Week 1":
               * *課堂互動提問（啟發思考）*：
                 * 指著大螢幕上台積電一路飆升的走勢問全班：「看到這條曲線，如果用大家在大一【經濟學】學過的供需理論或景氣循環，背後反映了什麼全球商業訊號？」
                 * *老師收攏點評*：生成式 AI 爆發帶來了全球對頂尖算力的巨大需求衝擊（Demand Shock），供不應求讓晶圓代工龍頭直接受惠。圖表不只是程式畫出來的線，而是真實資本市場的經濟脈動！
-              * *快手加碼 (Fast-finisher Options)*：針對提早跑完的同學，現場拋出 2 個延伸挑戰：
-                * **Option A（改參數）**：把代碼中的 `period="1y"` 改成 `period="5y"`，或把代號改成輝達 `"NVDA"`，觀察全球 AI 晶片浪潮。
-                * **Option B（問 AI 商業邏輯）**：切到 Gemini 分頁提問：「請分析台積電過去一年的關鍵成長動能」，體驗代碼結合商業分析。
+              * *快手加碼 (Fast-Finisher Options)*：針對提早跑完台積電代碼的同學，現場拋出 2 個延伸挑戰：
+                * **Option A（改參數／換標的）**：把代碼中的 `period="1y"` 改成 `period="5y"`，或把代號改成輝達 `"NVDA"`，觀察全球 AI 晶片長線循環。
+                * **Option B（問 AI 商業邏輯）**：切到 Gemini 分頁提問：「請分析台積電過去一年的關鍵成長動能與催化劑」，體驗「代碼視覺化＋AI 商業分析」的深度整合。
               * *預告*：第三節每個人都要親自挑戰自己的 Lab 0！
             * **10:48 - 10:50 ｜ 課間緩衝與連線疑難排解**
               * *引導說明*：下課 2 分鐘，協助確認連線狀態。
@@ -402,13 +398,15 @@ if selected_week == "Week 1":
               *"Look at this soaring curve of TSMC. Connecting back to your freshman Economics: what market signals or supply-and-demand shifts explain this massive rally?
               (Encourage 1-2 hands)
               Spot on! Generative AI created an unprecedented demand shock for computing power.
-              For fast teams: tweak `period='1y'` to `'5y'` to view the multi-year cycle, or ask Gemini to outline 3 macro catalysts behind this chart!"*
+              For fast teams:
+              - **Option A**: Tweak `period='1y'` to `'5y'` or change the ticker to `'NVDA'` to view the multi-year cycle!
+              - **Option B**: Ask Gemini: *'Outline 3 macro catalysts behind TSMC's growth over the past year'*, merging code with business intelligence!"*
             * **10:48 - 10:50 (Intermission)**:
               *"Take a short break. Any Wi-Fi issues, come to the front desk now!"*
             """)
 
     # --------------------------------------------------------------------------
-    # TAB 3: 第三節課（11:00 - 11:50）—— 完整細節 100% 還原！
+    # TAB 3: 第三節課（11:00 - 11:50）—— 完整細節與快手加碼 Options 100% 還原！
     # --------------------------------------------------------------------------
     with tab3:
         st.subheader("🎙️ Part 3：Lab 0 動手實作、雙軌 AI 除錯與首週成就收尾 (學校第 4 節：11:00 - 11:50)")
@@ -430,8 +428,9 @@ if selected_week == "Week 1":
               * *課堂互動提問（啟發思考）*：
                 * 現場邀請換成蘋果 (`AAPL`) 或星巴克 (`SBUX`) 的同學抬頭分享：「誰的走勢圖跟台積電長得截然不同？從大家學過的【會計與商業模式】來看，B2B 晶圓代工與 B2C 消費終端的營收結構有何本質差異？」
                 * *老師收攏點評*：台積電是賣武器給淘金客的企業（B2B 資本支出），受惠於雲端與科技巨頭的算力建置；而消費品直接面對一般大眾（B2C 消費支出），會受通膨與大眾消費意願牽動。圖表不只是程式，更是企業會計與獲利體質的鏡子！
-              * *快手加碼 (Bonus Challenge)*：
-                * 引導進度超前的同學向 AI 下進階 Prompt：「如何用 Python 同時繪製 TSMC 與 Apple 過去一年的走勢對比？」，體驗多資產比較的視覺威力。
+              * *快手加碼 (Fast-Finisher Options)*：針對提早完成 Lab 0 的進階同學：
+                * **Option A（雙標的走勢對比）**：引導同學向 AI 下 Prompt：「如何用 Python 同時繪製 TSMC 與 Apple 過去一年的走勢對比？」，體驗多資產同圖對比的視覺震撼。
+                * **Option B（計算報酬率加碼）**：進階詢問 Gemini：「請幫我計算台積電與蘋果過去一年的累計報酬率（Return %）」，提前預習下週的資料工程計算！
             * **11:40 - 11:50 ｜ 首日總結、側邊欄打卡繳交與 Office Hours**
               * *肯定成果*：恭喜全班在第一天就成功使用自然語言跑出雲端數據圖表。
               * *側邊欄打卡叮嚀*：提醒同學下課前務必在網頁左側的 **Course AI Assistant（AI 助教欄位）** 輸入學號與今日跑出的股票心得（例如 AAPL / SBUX），作為今日出勤與 Lab 0 完成的平時成績依據。
@@ -450,11 +449,13 @@ if selected_week == "Week 1":
               3. Ask: *'Fix this error and give me working code.'* Never worry about bugs—AI has your back!"*
             * **11:15 - 11:30 (Hands-on Walkthrough)**:
               *(Walking around)* *"Fantastic charts! Look at those prices updating in real time. If you have questions or want bonus engagement points, drop a question in our Course AI Assistant in the sidebar."*
-            * **11:30 - 11:40 (Interactive Q&A: Accounting & Business Models)**:
+            * **11:30 - 11:40 (Interactive Q&A: Accounting & Business Models & Fast-Finisher Options)**:
               *"Who changed their ticker to Apple or Starbucks? Does your trend look very different from TSMC? Connecting to Accounting: *'Why do B2B infrastructure firms behave so differently from B2C consumer giants in their revenue models?'*
               (Invite a student to share briefly)
               *Brilliant observation! TSMC sells the infrastructure to enterprises (B2B capex), whereas consumer brands depend directly on consumer sentiment and inflation (B2C). Our charts are the living reflection of corporate financial realities!*
-              For teams who already finished: ask Gemini: *'How can I plot both TSMC and Apple on the same chart using yfinance?'* See if you can visualize who outperformed over the past 12 months!"*
+              For teams who already finished Lab 0:
+              - **Option A**: Ask Gemini: *'How can I plot both TSMC and Apple on the same chart using yfinance?'* Compare their 1-year performance side-by-side!
+              - **Option B**: Ask Gemini: *'Calculate the cumulative percentage return for both TSMC and Apple over the past year'*, giving you an early preview of Week 2 data engineering!"*
             * **11:40 - 11:50 (Wrap-up, Sidebar Check-in & Office Hours)**:
               *"Big round of applause to everyone! You officially ran your first cloud Python program today without getting stuck in syntax.
               Before you leave, **please submit your Lab 0 check-in** via the **Sidebar AI Assistant** on our portal by typing your student ID and stock ticker insight. This records your attendance and practical milestone!
