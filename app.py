@@ -122,7 +122,7 @@ if selected_week == "Week 1":
               * *預告*：10:00 準時進入下方「本週實作指引」，進行 Google Colab 雲端開箱與快捷鍵暖身。
             """)
             
-        with col_b:
+        with col_b: 
             st.markdown("#### 🗣️ English Teaching Scripts")
             st.info("""
             * **10:00 - 10:15 (Cloud Setup, Transparency Earphones & Voice Prompting)**:
