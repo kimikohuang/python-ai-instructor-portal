@@ -104,36 +104,39 @@ if selected_week == "Week 1":
             * **09:45 - 09:50**: *"We will take a 10-minute break. When we return at 10:00, we will open Google Colab together!"*
             """)
 
-    # --------------------------------------------------------------------------
+# --------------------------------------------------------------------------
     # TAB 2: 第二節課（10:00 - 10:50）
     # --------------------------------------------------------------------------
     with tab2:
-        st.subheader("🎙️ Part 2：雲端環境開箱與台積電 Live Demo (學校第 3 節：10:00 - 10:50)")
+        st.subheader("🎙️ Part 2：雲端環境開箱、Gemini 互補策略與 Pair Programming 精神 (學校第 3 節：10:00 - 10:50)")
         col_a, col_b = st.columns(2)
         
         with col_a:
             st.markdown("#### ⏱️ 時間軸與中文授課導引")
             st.markdown("""
-            * **10:00 - 10:15 ｜ Google 帳號與 Colab 傳送門點擊**
-              * *引導說明*：請全班將學生端網頁往下滑到「課堂實作步驟」，點擊綠色的 **🚀 Open Google Colab**。確認 Google 帳號登入順利。若沒帶筆電，啟動 Pair Programming（結對編程）共用螢幕。
-            * **10:15 - 10:35 ｜ 現場 Live Demo：4 行 Python 抓取台積電股價**
+            * **10:00 - 10:15 ｜ Google 帳號、Colab 傳送門與 Pair Programming 精神**
+              * *操作重點*：引導同學點擊網頁上的 Colab 連結。
+              * *引導說明*：確認大家登入 Google 帳號。若有同學沒帶筆電，請兩人共用一台，進行 **Pair Programming（結對編程）**。強調在 AI 時代，這不只是克難克難，而是訓練「雙人協作、共同向 AI 下指令與除錯」的重要職場能力，能激盪出更好的商業邏輯。
+            * **10:15 - 10:25 ｜ 雙軌 AI 互補機制說明 (Colab + Gemini)**
+              * *引導說明*：提醒同學除了 Colab 內建的 AI 之外，一定要另外開一個分頁放 **Google Gemini**。兩者是最佳互補工具：當 Colab 內建 AI 的免費額度用盡或遇到複雜報錯時，直接切換到 Gemini 繼續對話，確保實作不中斷。
+            * **10:25 - 10:40 ｜ 現場 Live Demo：4 行 Python 抓取台積電股價**
               * *操作重點*：老師在講台投影 Colab，現場輸入 yfinance 抓取台積電 (`2330.TW`) 並繪圖。
               * *示範說明*：展示不需在電腦安裝龐大軟體，只要雲端 4 行代碼就能即時抓取全球市場數據並產生走勢圖。
-            * **10:35 - 10:45 ｜ 商業數據思考與第三節任務預告**
+            * **10:40 - 10:48 ｜ 商業數據思考與第三節任務預告**
               * *引導說明*：引導同學思考大一經濟與會計數據，說明為何動態即時圖表能協助商業洞察。
-            * **10:45 - 10:50 ｜ 課間緩衝與連線疑難排解**
-              * *引導說明*：下課 10 分鐘，邀請剛才 Colab 開不起來或連不上 Wi-Fi 的同學到台前排除問題。
+            * **10:48 - 10:50 ｜ 課間緩衝與連線疑難排解**
+              * *引導說明*：下課 2 分鐘，協助確認連線狀態。
             """)
             
         with col_b:
             st.markdown("#### 🗣️ English Teaching Scripts")
             st.info("""
-            * **10:00 - 10:15**: *"Welcome back! Scroll down to our Weekly Agenda section and click the button: **🚀 Open Google Colab**. Make sure you are signed into your Google account. If you don't have a laptop today, please pair up with the classmate next to you."*
-            * **10:15 - 10:35**: *"Look up at the main screen. With just 4 lines of Python in the cloud, we connect to market data and fetch TSMC's daily prices (ticker `2330.TW`), instantly plotting a visual trend."*
-            * **10:35 - 10:45**: *"Think back to freshman Economics and Accounting. Instead of static tables, Python empowers you to observe market volatility dynamically. In our next session, you will run this notebook yourself."*
-            * **10:45 - 10:50**: *"Take a 10-minute break. If anyone has Wi-Fi or Google login issues, come to the front desk now so we can solve it before our hands-on lab at 11:00."*
+            * **10:00 - 10:15**: *"Welcome back! Scroll down to our Weekly Agenda and click **🚀 Open Google Colab**. If you don't have a laptop today, please pair up with the classmate next to you for **Pair Programming**. In the AI era, pair programming is a superpower—instead of just sharing a keyboard, you and your partner share the role of directing AI and solving business problems together!"*
+            * **10:15 - 10:25**: *"Also, keep a separate browser tab open for **Google Gemini**. Colab and Gemini act as a dual-track system. If Colab's built-in AI ever hits its usage limit or throws a confusing error, simply switch over to Gemini. Your workflow will never be interrupted."*
+            * **10:25 - 10:40**: *"Look at the main screen. With just 4 lines of Python in the cloud, we fetch TSMC's daily prices (`2330.TW`) and instantly plot a trend chart."*
+            * **10:40 - 10:48**: *"Think back to Economics and Accounting. Instead of static tables, Python empowers you to observe market volatility dynamically. In our next session, you will run this notebook yourself."*
+            * **10:48 - 10:50**: *"Take a short break. If anyone has Wi-Fi or Google login issues, come to the front desk now!"*
             """)
-
     # --------------------------------------------------------------------------
     # TAB 3: 第三節課（11:00 - 11:50）
     # --------------------------------------------------------------------------
