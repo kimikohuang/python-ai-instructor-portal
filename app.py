@@ -168,8 +168,12 @@ if selected_week == "Week 1":
                 4. 在 Colab 儲存格按 `Ctrl+V` (或 `Cmd+V`) 貼上。
                 5. 雙手離開滑鼠，口頭帶全班一起大聲倒數：「按下 **Shift + Enter**！」
                 6. 幾秒後折線圖跳出，全班感受成就感！隨後請全班跟著老師做一次。
-            * **10:40 - 10:48 ｜ 商業數據思考與第三節任務預告**
-              * *引導說明*：連結大一經濟與會計數據，預告第三節換大家親手跑程式。
+            * **10:40 - 10:48 ｜ 商業數據思考、超前快手加碼挑戰 (2 Options) 與任務預告**
+              * *全班引導*：連結大一經濟與會計數據，說明為何動態圖表比靜態報表更能看出營運週期。
+              * *快手加碼 (Fast-finisher Options)*：針對提早跑完的同學，現場拋出 2 個延伸挑戰：
+                * **Option A（改參數）**：把代碼中的 `period="1y"` 改成 `period="5y"`，或把代號改成輝達 `"NVDA"`，觀察全球 AI 晶片浪潮。
+                * **Option B（問 AI 商業邏輯）**：切到 Gemini 分頁提問：「請分析台積電過去一年的關鍵成長動能」，體驗代碼結合商業分析。
+              * *預告*：第三節每個人都要親自挑戰自己的 Lab 0！
             * **10:48 - 10:50 ｜ 課間緩衝與連線疑難排解**
               * *引導說明*：下課 2 分鐘，協助確認連線狀態。
             """)
@@ -187,7 +191,11 @@ if selected_week == "Week 1":
               *"Look at the main screen. In our portal, we have the prompt: 'Fetch TSMC 2330.TW for 1 year and plot closing price'. That is all you say to AI!
               Now watch closely: I copy this 4-line code, switch to Google Colab, paste it in with `Ctrl+V`, and without touching the mouse, I press **Shift + Enter**!
               Look at the screen—in 3 seconds, a real financial trend chart appears. Now, open your Colab and do the exact same thing together with me!"*
-            * **10:40 - 10:48**: *"Think back to Economics and Accounting. In our next session, you will run this notebook yourself."*
+            * **10:40 - 10:48 (Business Reflection & Fast-Finisher Options)**:
+              *"Awesome job seeing your charts pop up! While everyone catches up, here are two quick micro-options for fast finishers:
+              - **Option A (Tweak Parameters)**: Change `period='1y'` to `'5y'` to view a 5-year macro trend, or replace `'2330.TW'` with NVIDIA (`'NVDA'`).
+              - **Option B (Ask Gemini)**: Switch to your Gemini tab and ask: *'Explain 3 key business factors driving TSMC's stock price over the past year.'*
+              In our next session, you will officially customize this code in Lab 0!"*
             * **10:48 - 10:50**: *"Take a short break. Any Wi-Fi issues, come to the front desk now!"*
             """)
 
