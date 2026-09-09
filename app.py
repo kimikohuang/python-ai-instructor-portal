@@ -104,7 +104,7 @@ if selected_week == "Week 1":
             * **09:15 - 09:25 ｜ 多語系切換與側邊欄 AI 助教演練**
               * *操作重點*：展示點擊越南語、印尼語等多語系切換；展開左側邊欄 **Course AI Assistant**，說明發問拿平時加分與匿名模式。
             * **09:25 - 09:35 ｜ 四大核心卡片、結對專題 (Pair Project) 與指揮家思維**
-              * *指揮家思維*：不用死背語法，我們是指揮家，AI 是演奏樂手，以自然語言 prompt 協同作業。
+              * *指揮家思維*：不用死背語法，我們是指揮家，AI 則是演奏樂手，以自然語言 prompt 協同作業。
               * *課堂互動提問（啟發思考）*：
                 * 現場邀請 1～2 位同學分享想法：「大家覺得在 AI 時代寫程式，是一個人自己默默做比較好，還是兩個人結對 (Pair) 協作比較好？為什麼？」
                 * *老師收攏點評*：一個人單打獨鬥時，常常會陷入提示詞 (Prompt) 的思考盲點，或被一個小小符號卡住；兩個人一起，一人負責商業需求與提問邏輯 (Product Owner)，一人把關程式與介面排版 (Builder)，這種人機＋雙人協作才是企業最需要的模式！
@@ -118,8 +118,9 @@ if selected_week == "Week 1":
               * *激勵說明*：眼前的手機課綱與 AI 助教全是老師用純 Python + Streamlit 打造的！前幾週在 Colab 打基礎，第 10-11 週大家也能做出自己的 Web App 發布到手機上。
             * **09:40 - 09:48 ｜ 點開「18 週進度總表」看全學期課程地圖**
               * *操作重點*：展開 18 週表，指出台積電數據工程、FRED 總經、Google AI Studio、財報法說會解析，直到第 16 週發表會。
-            * **09:48 - 09:50 ｜ 第一節收尾與課間休息**
-              * *預告*：10:00 準時進入下方「本週實作指引」，進行 Google Colab 雲端開箱與快捷鍵暖身。
+            * **09:48 - 09:50 ｜ 破除恐懼的心態喊話：AI 跨越語言障礙與提問本質**
+              * *精神喊話*：告訴同學現代 AI 的語音辨識與自然語言處理已經跨越了語言門檻。無論用越南語、泰語、法語或印尼語，用母語語音輸入效果都極佳。
+              * *核心心法*：在 AI 時代「不需要比打字快、不需要死背語法」。最重要的是**「學會提出正確的問題、把商業邏輯定義清楚」**。用最熟悉的方式把想法說出來，AI 就是最強大的技術執行長。
             """)
             
         with col_b:
@@ -142,7 +143,12 @@ if selected_week == "Week 1":
               That's why our grading is: 50% weekly practice, 20% midterm in Week 9, and 30% Final Showcase in Week 16.
               For our Final Showcase, we encourage **Pair Projects (teams of 2)**. To ensure everyone feels supported and no one is left behind, teams are flexible: you may work **individually (1 person)**, as a **pair (2 people)**, or form a group of **3 people maximum** if there's an odd number.
               In Week 15, right before Demo Day, our 3rd session will be a hands-on project clinic and rehearsal to ensure your app is secure and ready!"*
-            * **09:35 - 09:50**: *"Take 5 minutes to settle down, connect to the Wi-Fi, and get ready for our cloud setup in Session 2!"*
+            * **09:35 - 09:50 (Portal Showcase & Mindset Hype)**:
+              *"Take a look at this portal you are viewing right now—it was built entirely by me using Python and Streamlit! You will learn to build your own web apps just like this by Week 10.
+              Before we take a short break and open our laptops for Session 2, remember: **AI has completely crossed the language barrier.** 
+              Whether your native language is Vietnamese, Thai, French, or Indonesian, modern AI understands your voice effortlessly. 
+              **You do not need to fear coding anymore.** The most valuable skill in the AI era is **knowing how to ask the right questions and defining your problems clearly.** 
+              Speak your mind, and let AI handle the heavy lifting!"*
             """)
 
     # --------------------------------------------------------------------------
