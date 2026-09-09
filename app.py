@@ -105,6 +105,9 @@ if selected_week == "Week 1":
               * *操作重點*：展示點擊越南語、印尼語等多語系切換；展開左側邊欄 **Course AI Assistant**，說明發問拿平時加分與匿名模式。
             * **09:25 - 09:35 ｜ 四大核心卡片、結對專題 (Pair Project) 與指揮家思維**
               * *指揮家思維*：不用死背語法，我們是指揮家，AI 是演奏樂手，以自然語言 prompt 協同作業。
+              * *課堂互動提問（啟發思考）*：
+                * 現場邀請 1～2 位同學分享想法：「大家覺得在 AI 時代寫程式，是一個人自己默默做比較好，還是兩個人結對 (Pair) 協作比較好？為什麼？」
+                * *老師收攏點評*：一個人單打獨鬥時，常常會陷入提示詞 (Prompt) 的思考盲點，或被一個小小符號卡住；兩個人一起，一人負責商業需求與提問邏輯 (Product Owner)，一人把關程式與介面排版 (Builder)，這種人機＋雙人協作才是企業最需要的模式！
               * *評量與專題機制（重要定調）*：
                 * 平常實作 50%、第 9 週期中 20%、**第 16 週 (12/24) 期末成果發表會 30%**。
                 * **期末專題採「結對彈性制（原則 2 人，可 1~3 人）」**：
@@ -132,9 +135,13 @@ if selected_week == "Week 1":
               4. **Office Hours**: You can talk to me directly right after class in Room 506, or message in this LINE chat to set up an on-campus meeting. Email: `kimikohuang@mail.mcut.edu.tw`.
               5. **Nickname Rule**: Change your LINE nickname right now to **'Last 3 digits of Student ID + Name'** (e.g. `205 Huy`). We use this for attendance and participation points!"*
             * **09:15 - 09:25**: *"Notice the language buttons below the title—the syllabus adapts to 7 languages instantly. In the sidebar, our Course AI Assistant is ready. Asking questions earns engagement points!"*
-            * **09:25 - 09:35 (Grading & Flexible Pair Teams)**:
-              *"Review our grading: 50% weekly practice, 20% midterm in Week 9, and 30% Final Showcase in Week 16.
-              For our Final Showcase, we encourage **Pair Projects (teams of 2)**. To ensure everyone feels supported and no one is left behind, teams can be flexible: you may work **individually (1 person)**, as a **pair (2 people)**, or form a group of **3 people maximum** if there's an odd number.
+            * **09:25 - 09:35 (Conductor Mindset, Interactive Discussion & Pair Teams)**:
+              *"Review our core cards on screen. Adopt the **Conductor Mindset**: AI is your orchestra, and you lead it using natural language prompts without memorizing syntax.
+              Before we talk about teams, let me ask: *'In the era of AI, do you think it is more powerful to code alone, or to collaborate in pairs? Any thoughts?'*
+              (Invite 1-2 students to share briefly)
+              *Exactly! When coding alone, you can easily get tunnel vision with your prompts. In a pair, one acts as the Product Owner focusing on business logic, while the other inspects the code and UI. Two human minds leading one AI create the best results!*
+              That's why our grading is: 50% weekly practice, 20% midterm in Week 9, and 30% Final Showcase in Week 16.
+              For our Final Showcase, we encourage **Pair Projects (teams of 2)**. To ensure everyone feels supported and no one is left behind, teams are flexible: you may work **individually (1 person)**, as a **pair (2 people)**, or form a group of **3 people maximum** if there's an odd number.
               In Week 15, right before Demo Day, our 3rd session will be a hands-on project clinic and rehearsal to ensure your app is secure and ready!"*
             * **09:35 - 09:40 (Inspiration & Streamlit Showcase)**:
               *"Everything you see on your phone right now was built with pure Python and **Streamlit**! You don't need any prior coding background. We will start gently with Google Colab, and by Weeks 10 & 11, you will build and launch your very own live web apps on your phones!"*
