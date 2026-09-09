@@ -236,10 +236,11 @@ if selected_week == "Week 1":
                 * *老師收攏點評*：台積電是賣武器給淘金客的企業（B2B 資本支出），受惠於雲端與科技巨頭的算力建置；而消費品直接面對一般大眾（B2C 消費支出），會受通膨與大眾消費意願牽動。圖表不只是程式，更是企業會計與獲利體質的鏡子！
               * *快手加碼 (Bonus Challenge)*：
                 * 引導進度超前的同學向 AI 下進階 Prompt：「如何用 Python 同時繪製 TSMC 與 Apple 過去一年的走勢對比？」，體驗多資產比較的視覺威力。
-            * **11:40 - 11:50 ｜ 首日總結、設備叮嚀與 Office Hours 提醒**
+            * **11:40 - 11:50 ｜ 首日總結、側邊欄打卡繳交與 Office Hours**
               * *肯定成果*：恭喜全班在第一天就成功使用自然語言跑出雲端數據圖表。
-              * *下週叮嚀*：下週進入第二週「市場數據工程：Apple 與 TSMC 的深入對比」，每週務必攜帶筆電與手機。
-              * *下課諮詢*：有任何選課、設備或個人問題，老師留在 506 教室接受個別諮詢。
+              * *側邊欄打卡叮嚀*：提醒同學下課前務必在網頁左側的 **Course AI Assistant（AI 助教欄位）** 輸入學號與今日跑出的股票心得（例如 AAPL / SBUX），作為今日出勤與 Lab 0 完成的平時成績依據。
+              * *選修說明*：提醒同學們本課程不限系所與年級，歡迎將網頁轉發給其他想學 AI 的外系好朋友一起來加退選。
+              * *下課諮詢*：老師留在 506 教室接受個別諮詢。
             """)
             
         with col_b:
@@ -258,10 +259,11 @@ if selected_week == "Week 1":
               (Invite a student to share briefly)
               *Brilliant observation! TSMC sells the infrastructure to enterprises (B2B capex), whereas consumer brands depend directly on consumer sentiment and inflation (B2C). Our charts are the living reflection of corporate financial realities!*
               For teams who already finished: ask Gemini: *'How can I plot both TSMC and Apple on the same chart using yfinance?'* See if you can visualize who outperformed over the past 12 months!"*
-            * **11:40 - 11:50 (Wrap-up & Office Hours)**:
+            * **11:40 - 11:50 (Wrap-up, Sidebar Check-in & Office Hours)**:
               *"Big round of applause to everyone! You officially ran your first cloud Python program today without getting stuck in syntax.
-              Next Thursday at 09:00, we dive into **Market Data Engineering: Apple & TSMC**. Remember to bring your laptop and smartphone every week.
-              I will be right here in Room 506 after class if anyone has course enrollment or setup questions. Have a wonderful week!"*
+              Before you leave, **please submit your Lab 0 check-in** via the **Sidebar AI Assistant** on our portal by typing your student ID and stock ticker insight. This records your attendance and practical milestone!
+              Also, remember that this course is open to **ALL majors and year levels across the university**—feel free to share our syllabus portal with friends from other departments during the add/drop week.
+              I will be right here in Room 506 after class. Have a wonderful week!"*
             """)
 
 else:
