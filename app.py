@@ -1,6 +1,6 @@
 # ==============================================================================
 # [Script] Instructor-Side Secure Script & Teaching Prompt Portal
-# 【教師專屬】加密講稿與課堂提示管理系統
+# 【教師專屬】加密講稿與課堂提示管理系統（含詳細中英文授課時間軸）
 # ==============================================================================
 
 import streamlit as st
@@ -45,7 +45,7 @@ if not check_password():
 # ==============================================================================
 
 st.title("🗝️ 教師專屬講稿與課堂提示控制台")
-st.caption("🎯 建議使用平板或第二台筆電開啟此頁面，作為上課時的口頭提示、時間掌控與互動金句備忘錄。")
+st.caption("🎯 建議使用平板或第二台筆電開啟此頁面，作為上課時的口頭提示、中英文授課時間軸與互動金句備忘錄。")
 
 st.markdown("---")
 
@@ -70,65 +70,78 @@ if selected_week == "Week 1":
     tab1, tab2, tab3 = st.tabs(["第一節 (09:10-10:00)", "第二節 (10:10-11:00)", "第三節 (11:10-12:00)"])
     
     with tab1:
-        st.subheader("🎙️ 第一節：破冰、課程總覽與心態建立")
+        st.subheader("🎙️ 第一節：破冰、課程總覽與心態建立 (Session 1)")
         
         col_a, col_b = st.columns(2)
         with col_a:
-            st.markdown("#### 📝 口頭講稿與核心觀念")
+            st.markdown("#### ⏱️ 時間軸與中文授課導引")
             st.markdown("""
-            * **消除焦慮**：先切換大螢幕的學生端網頁到越文與印尼文，告訴台下外籍同學：「這門課不需要程式底子，只要會問問題，就能跟我一起創造 AI 應用。」
-            * **介紹「指揮家思維 (Conductor Mindset)」**：
-              > *「過去學程式要記住所有艱澀的語法（Syntax），就像我們要自己學會彈奏每一顆音符；但在 AI 時代，我們扮演的是『交響樂團指揮家』。你不需要會拉小提琴，但你要知道你想聽什麼樂章、如何精準地下達指令給 AI（Claude / ChatGPT / Gemini）。」*
-            * **說明評量方式**：強調每週課堂實作佔 50%，鼓勵大家不用怕犯錯，手把手跟著做就一定能過關。
+            * **00:00 - 10:00 ｜ 破冰與門戶導覽**
+              * *中文說明*：歡迎同學，介紹這門課的核心目標，並引導同學掃描大螢幕 QR Code 打開多語系網頁與加入 LINE 社群。提醒 LINE 暱稱設為「學號末三碼 + 名字」（例如 `205 Huy`）。
+            * **10:00 - 30:00 ｜ 建立指揮家思維 (Conductor Mindset)**
+              * *中文說明*：解釋為什麼不需要寫程式底子。我們不是要當苦命的樂手去背語法，而是要當指揮家，學會用自然語言指揮 AI。
+            * **30:00 - 45:00 ｜ 評量標準與期望管理**
+              * *中文說明*：說明 50% 課堂實作、20% 期中、30% 期末專案的配分，強調初學者友善與步驟引導。
+            * **45:00 - 50:00 ｜ 第一節總結與 Q&A**
+              * *中文說明*：開放現場提問，預告準備進入第二節的雲端上機環境。
             """)
         with col_b:
-            st.markdown("#### ⚡ 現場操作與互動提示")
-            st.warning("""
-            * **黑板板書重點**：
-              1. 課程名稱：Python AI Applications
-              2. 老師姓名：黃可羣 (Kimiko)
-              3. 核心精神：Conductor Mindset
-            * **檢查點**：注意觀察班上外籍生（尤其是越南及印尼籍同學）的表情，確保他們聽得懂英文說明。
+            st.markdown("#### 🗣️ English Teaching Scripts (英文授課講稿)")
+            st.info("""
+            * **00:00 - 10:00**: *"Welcome everyone to Python AI Applications! Please scan the QR Code on the screen right now with your phone to open our multi-language syllabus portal and join our LINE OpenChat. Remember to set your LINE nickname as your last 3 digits plus your name, for example, '205 Huy'."*
+            * **10:00 - 30:00**: *"You don't need any prior coding background. In the past, learning programming meant memorizing difficult syntax—like learning to play every single note on an instrument. But today, in the era of AI, we act as the **conductor** of an orchestra. You guide the AI with natural language to build powerful business applications."*
+            * **30:00 - 45:00**: *"Our grading policy is simple: 50% for weekly in-class practice, 20% for the midterm, and 30% for the final project showcase. Step-by-step guidance is provided in every class, so beginners are very welcome!"*
+            * **45:00 - 50:00**: *"Any questions so far? Great. In our next session, we will open our web browsers and jump straight into Google Colab without installing anything heavy."*
             """)
             
     with tab2:
-        st.subheader("🎙️ 第二節：雲環境開箱與 LINE 社群 QR Code 導引")
+        st.subheader("🎙️ 第二節：雲環境開箱與 Live Demo 示範 (Session 2)")
         
         col_a, col_b = st.columns(2)
         with col_a:
-            st.markdown("#### 📝 口頭講稿與工具介紹")
+            st.markdown("#### ⏱️ 時間軸與中文授課導引")
             st.markdown("""
-            * **掃描 QR Code**：請同學拿出手機掃描大螢幕右側的 LINE QR Code 加入社群。
-            * **再次強調 LINE 暱稱規範**：
-              > *「請大家加入後立刻把名字改為：**學號末三碼 + 名字**（例如：`205 Huy`）。這樣老師在計算平時參與加分時才找得到人喔！」*
-            * **雲端開發環境 (Google Colab)**：
-              > *「我們這學期不需要在電腦安裝任何沈重的軟體，打開瀏覽器就能直接寫 Python。這就像是雲端上的筆記本，隨時隨地都能跑程式碼。」*
-            * **Live Demo 現場示範**：現場開啟 Colab，花 3 分鐘示範抓取台積電 (`2330.TW`) 股價並畫出走勢圖，讓大家驚艷一下。
+            * **00:00 - 15:00 ｜ Google Colab 雲端環境開箱**
+              * *中文說明*：帶領同學登入瀏覽器，解說為什麼我們不用安裝複雜軟體，直接在雲端運算。
+            * **15:00 - 35:00 ｜ 現場即時示範：抓取台積電股價**
+              * *中文說明*：老師現場打程式碼（或用 AI 生成），示範如何用幾行 Python 抓取台積電 (`2330.TW`) 的每日股價並畫出走勢圖。
+            * **35:00 - 45:00 ｜ 連結商業與數據的價值**
+              * *中文說明*：引導同學思考大一學過的經濟與會計數據，如何透過 Python 變成視覺化決策工具。
+            * **45:00 - 50:00 ｜ 第二節小結**
+              * *中文說明*：確認大家都看懂示範，準備進入第三節的動手實作（Lab 0）。
             """)
         with col_b:
-            st.markdown("#### ⚡ 教學節奏與備忘")
-            st.warning("""
-            * **常見狀況處理**：部分同學如果 Google 帳號登入有問題，請隔壁同學互相協助，或引導他們先看老師示範。
-            * **互動提問**：問大家「有沒有人平常會看股票或關注科技新聞？」藉此連結大一的經濟學基礎。
+            st.markdown("#### 🗣️ English Teaching Scripts (英文授課講稿)")
+            st.info("""
+            * **00:00 - 15:00**: *"Let's open your web browser and go to Google Colab. We won't install any heavy software on your laptops today. Colab acts like a cloud-based notebook where Python runs instantly in your browser."*
+            * **15:00 - 35:00**: *"Watch my screen. With just a few lines of Python code, we can fetch real-time daily stock prices for TSMC—ticker symbol 2330.TW—and instantly plot a visual trend chart right in front of our eyes."*
+            * **35:00 - 45:00**: *"Think about what you learned in freshman Economics and Accounting. Being able to pull live financial data and turn it into charts is your very first step toward business intelligence."*
+            * **45:00 - 50:00**: *"Now that you've seen how magical it is, it's time for you to try it yourself in our third session."*
             """)
             
     with tab3:
-        st.subheader("🎙️ 第三節：Lab 0 實作與 AI 助教互動演練")
+        st.subheader("🎙️ 第三節：Lab 0 實作與 AI 助教互動 (Session 3)")
         
         col_a, col_b = st.columns(2)
         with col_a:
-            st.markdown("#### 📝 口頭講稿與實作引導")
+            st.markdown("#### ⏱️ 時間軸與中文授課導引")
             st.markdown("""
-            * **發布 Lab 0 任務**：請同學打開學期網頁，點開第一週的 Colab 連結，嘗試執行第一段範例程式碼。
-            * **介紹側邊欄 AI 助教**：
-              > *「如果在寫程式時卡關了、或覺得不好意思舉手，可以直接使用網頁側邊欄的 **Course AI Assistant**。它可以幫你解答關於期末專案、評分或程式碼的各種問題，而且還可以選擇匿名提問喔！」*
-            * **下課前的叮嚀**：確認大家都成功加入 LINE 社群，並預告下週將進入「市場數據工程：台積電與蘋果的股價對比」。
+            * **00:00 - 15:00 ｜ Lab 0 任務佈達與動手操作**
+              * *中文說明*：發布第一週的實作任務，請同學打開網頁中的 Colab 連結，自己跑一次範例程式碼。
+            * **15:00 - 35:00 ｜ 走動式教學與側邊欄 AI 助教介紹**
+              * *中文說明*：老師在教室走動巡視。同時提醒同學如果卡關、不好意思舉手，可以隨時使用網頁側邊欄的 AI 助教提問（可匿名）。
+            * **35:00 - 45:00 ｜ 彈性加碼內容：如果進度超前？**
+              * *中文說明*：針對進度較快的同學，引導他們嘗試抓取兩支股票（例如 Apple 與 TSMC）並放在同一張圖表上做初步對比。
+            * **45:00 - 50:00 ｜ 課堂總結與預告**
+              * *中文說明*：總結今天學會了 Colab 與自然語言編程，預告下週將進入「市場數據工程：Apple 與 TSMC 的深入對比」。
             """)
         with col_b:
-            st.markdown("#### ⚡ 教室巡視重點")
-            st.warning("""
-            * **走動式教學**：花 15 分鐘在走道巡視，特別協助外籍生確認 Colab 帳號與執行狀態。
-            * **課後記錄**：留意今天同學們在助教網頁上提出的熱門問題，作為下週調整教學節奏的參考。
+            st.markdown("#### 🗣️ English Teaching Scripts (英文授課講稿)")
+            st.info("""
+            * **00:00 - 15:00**: *"Open our syllabus portal, click on the Week 1 Colab link, and try running the sample code yourself. Modify the stock ticker from TSMC to Apple (AAPL), and see what happens."*
+            * **15:00 - 35:00**: *(Walking around)* *"If you run into any errors or feel shy about raising your hand, check out the **Course AI Assistant** in the sidebar. You can type your questions there—even anonymously—and get instant help."*
+            * **35:00 - 45:00**: *"For those who finish early, here is your bonus challenge: try modifying the code to fetch two stocks—Apple and TSMC—and plot them on the same chart. Compare their trends side-by-side!"*
+            * **45:00 - 50:00**: *"Fantastic job today! You've successfully run your first cloud Python script. Next week, we will dive deeper into Market Data Engineering, comparing Apple and TSMC side-by-side. See you next week!"*
             """)
 
 else:
