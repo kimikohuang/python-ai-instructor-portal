@@ -203,30 +203,46 @@ if selected_week == "Week 1":
     # TAB 3: 第三節課（11:00 - 11:50）
     # --------------------------------------------------------------------------
     with tab3:
-        st.subheader("🎙️ Part 3：Lab 0 動手實作與雙軌 AI 輔助體驗 (學校第 4 節：11:00 - 11:50)")
+        st.subheader("🎙️ Part 3：Lab 0 動手實作、雙軌 AI 除錯與首週成就收尾 (學校第 4 節：11:00 - 11:50)")
         col_a, col_b = st.columns(2)
         
         with col_a:
             st.markdown("#### ⏱️ 時間軸與中文授課導引")
             st.markdown("""
-            * **11:00 - 11:15 ｜ Lab 0 實作發布與雙軌 AI 說明**
-              * *任務佈達*：每位同學在 Colab 執行台積電腳本，並嘗試將股票代號改為蘋果 (`AAPL`)。
-              * *雙軌 AI 策略*：指導同學點擊網頁上的 **💡 Open Google Gemini** 放在獨立分頁。告訴大家 Colab 內建 AI 額度用完時，直接把程式碼複製到 Gemini 詢問。
-            * **11:15 - 11:35 ｜ 課堂巡視與個別指導**
-              * *走動巡視*：協助排除儲存格未執行或拼字錯誤等問題，鼓勵學生善用 AI 助教。
-            * **11:35 - 11:45 ｜ 加碼挑戰（針對進度超前學生）**
-              * *進階挑戰*：引導完成得快的同學詢問 AI：「如何把 TSMC 與 Apple 畫在同一張圖表上進行對比？」
-            * **11:45 - 11:50 ｜ 全課總結與下週預告**
-              * *結語說明*：嘉許全班達成第一天成功在雲端執行 Python 的里程碑，預告下週「市場數據工程：Apple 與 TSMC 的深入對比」。
+            * **11:00 - 11:15 ｜ Lab 0 實作發布與標準 AI 除錯流程**
+              * *任務發布 (Lab 0)*：
+                1. 每組在自己的 Colab 建立新 Notebook。
+                2. 將代碼中的台積電 (`2330.TW`) 改為蘋果 (`AAPL`) 或自選知名企業（如星巴克 `SBUX`、微軟 `MSFT`）。
+              * *除錯演練 (SOP)*：提醒同學若遇到紅色報錯，不用驚慌，三步驟除錯：
+                * 選取紅字 ➔ `Ctrl/Cmd + C` 複製 ➔ 切換至 Gemini 貼上詢問：「請修正此錯誤並給我正確代碼」。
+            * **11:15 - 11:35 ｜ 課堂巡視、個別排解與參與記錄**
+              * *走動指導*：協助排解 Wi-Fi 斷線或括號遺漏問題；觀察 Pair Programming 兩人的分工互動。
+              * *課堂參與*：跑出圖表即代表完成 Lab 0 初體驗，鼓勵透過網站側邊欄 AI 助教提出心得或問題換取加分。
+            * **11:35 - 11:45 ｜ 快手加碼：跨國巨頭雙線對比 (TSMC vs. Apple)**
+              * *進階示範*：引導進度超前的同學向 AI 下進階 Prompt：「如何用 Python 同時繪製 TSMC 與 Apple 過去一年的走勢對比？」，體驗多資產比較的視覺威力。
+            * **11:45 - 11:50 ｜ 首日總結、設備叮嚀與 Office Hours 提醒**
+              * *肯定成果*：恭喜全班在第一天就成功使用自然語言跑出雲端數據圖表。
+              * *下週叮嚀*：下週進入第二週「市場數據工程：Apple 與 TSMC 的深入對比」，每週務必攜帶筆電與手機。
+              * *下課諮詢*：有任何選課、設備或個人問題，老師留在 506 教室接受個別諮詢。
             """)
             
         with col_b:
             st.markdown("#### 🗣️ English Teaching Scripts")
             st.info("""
-            * **11:00 - 11:15**: *"It's hands-on time! Run the TSMC script in Colab, then try changing `2330.TW` to Apple (`AAPL`). Keep Gemini open in a separate tab as your backup AI when Colab limits are reached."*
-            * **11:15 - 11:35**: *(Walking around the classroom)* *"Great work seeing those charts appear! If you run into any red error messages, ask Gemini or our sidebar AI Assistant."*
-            * **11:35 - 11:45**: *"Bonus challenge for fast learners: Ask Gemini how to plot both TSMC and Apple on the exact same graph to compare their returns!"*
-            * **11:45 - 11:50**: *"Congratulations on running your first Python AI script today! Next week, we will dive deeper into Market Data Engineering. Have a great week, see you next Thursday!"*
+            * **11:00 - 11:15 (Lab 0 Mission & Error Recovery)**:
+              *"Now it's time for **Lab 0**! In your Colab notebook, take the 4-line script and customize it: replace TSMC (`'2330.TW'`) with Apple (`'AAPL'`) or any global brand you like, such as Starbucks (`'SBUX'`).
+              If you see a scary red error message, follow our 3-step reflex:
+              1. Copy the red text with `Ctrl/Cmd + C`.
+              2. Switch to Gemini and paste with `Ctrl/Cmd + V`.
+              3. Ask: *'Fix this error and give me working code.'* Never worry about bugs—AI has your back!"*
+            * **11:15 - 11:35 (Hands-on Walkthrough)**:
+              *(Walking around)* *"Fantastic charts! Look at those prices updating in real time. If you have questions or want bonus engagement points, drop a question in our Course AI Assistant in the sidebar."*
+            * **11:35 - 11:45 (Bonus Challenge: Dual Asset Comparison)**:
+              *"For teams who already finished: ask Gemini: *'How can I plot both TSMC and Apple on the same chart using yfinance?'* See if you can visualize who outperformed over the past 12 months!"*
+            * **11:45 - 11:50 (Wrap-up & Office Hours)**:
+              *"Big round of applause to everyone! You officially ran your first cloud Python program today without getting stuck in syntax.
+              Next Thursday at 09:00, we dive into **Market Data Engineering: Apple & TSMC**. Remember to bring your laptop and smartphone every week.
+              I will be right here in Room 506 after class if anyone has course enrollment or setup questions. Have a wonderful week!"*
             """)
 
 else:
