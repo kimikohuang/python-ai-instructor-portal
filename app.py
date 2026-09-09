@@ -77,6 +77,9 @@ if selected_week == "Week 1":
 🎒 Required Devices for Every Class:
    1. Laptop / Notebook (Required): For hands-on cloud coding with Google Colab.
    2. Smartphone: For LINE chat, real-time AI Q&A, and mobile app preview.
+   💡 Recommended (Optional): A headset with a microphone (for voice interaction).
+🎓 Eligibility & Audience: Open to ALL majors, year levels, and graduate/undergraduate students across the university (Local & International students are all warmly welcomed!).
+💬 Language & Support Note: Taught primarily in English (ideal for international students), with supplementary Chinese guidance (課程主要以英文講授，並輔以中文說明). If you need support for any specific national language, please feel free to leave a message in the TA section (若有需要增加國家語言，也歡迎在助教區留言).
 🗓️ Key Milestones:
    • Week 9 (Nov 05): Midterm Hands-on Review (20%)
    • Week 16 (Dec 24): Final Project Showcase & Live Web App Demo (30%)
