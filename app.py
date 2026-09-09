@@ -146,7 +146,7 @@ if selected_week == "Week 1":
     # TAB 2: 第二節課（10:00 - 10:50）
     # --------------------------------------------------------------------------
     with tab2:
-        st.subheader("🎙️ Part 2：雲端開箱、鍵盤快捷鍵、Gemini 互補與 Pair Programming (學校第 3 節：10:00 - 10:50)")
+        st.subheader("🎙️ Part 2：雲端開箱、鍵盤快捷鍵、台積電 Live Demo 與 Pair Programming (學校第 3 節：10:00 - 10:50)")
         col_a, col_b = st.columns(2)
         
         with col_a:
@@ -160,8 +160,14 @@ if selected_week == "Week 1":
               * *Pair Programming*：若沒帶電腦，兩人一組結對協作，共同下提示詞與除錯。
             * **10:15 - 10:25 ｜ 雙軌 AI 互補機制說明 (Colab + Gemini)**
               * *引導說明*：開另一個分頁放 Google Gemini。Colab 內建 AI 額度用完或遇到複雜報錯時，用快捷鍵 `Ctrl/Cmd + C` 複製貼到 Gemini，確保實作不中斷。
-            * **10:25 - 10:40 ｜ 現場 Live Demo：4 行 Python 抓取台積電股價**
-              * *操作重點*：老師在講台投影 Colab，現場輸入 yfinance 抓取台積電 (`2330.TW`) 並繪圖。
+            * **10:25 - 10:40 ｜ 現場 Live Demo：自然語言 Prompt ➔ 4 行 Python ➔ Shift+Enter 執行**
+              * *操作步驟*：
+                1. 老師投影大螢幕，打開學生端網頁的「Live Demo 折疊區」。
+                2. 念出提示詞（Prompt）：*「請用 yfinance 抓取台積電 2330.TW 過去一年股價並畫圖」*，向同學說明這就是我們跟 AI 溝通的方式。
+                3. 點擊代碼右上角「複製」，在另一個分頁打開全新的 Google Colab。
+                4. 在 Colab 儲存格按 `Ctrl+V` (或 `Cmd+V`) 貼上。
+                5. 雙手離開滑鼠，口頭帶全班一起大聲倒數：「按下 **Shift + Enter**！」
+                6. 幾秒後折線圖跳出，全班感受成就感！隨後請全班跟著老師做一次。
             * **10:40 - 10:48 ｜ 商業數據思考與第三節任務預告**
               * *引導說明*：連結大一經濟與會計數據，預告第三節換大家親手跑程式。
             * **10:48 - 10:50 ｜ 課間緩衝與連線疑難排解**
@@ -177,7 +183,10 @@ if selected_week == "Week 1":
               - **Colab Instant Run**: Press `Shift + Enter` to run any code cell instantly.
               If you don't have a laptop today, pair up with the classmate next to you for **Pair Programming**."*
             * **10:15 - 10:25**: *"Keep a separate tab open for **Google Gemini**. When Colab's AI hits its usage quota, copy your code with `Ctrl+C` and paste into Gemini with `Ctrl+V`!"*
-            * **10:25 - 10:40**: *"Look at the main screen. With 4 lines of Python, we fetch TSMC's daily prices (`2330.TW`) and plot a trend chart."*
+            * **10:25 - 10:40 (Step-by-Step Live Demo)**:
+              *"Look at the main screen. In our portal, we have the prompt: 'Fetch TSMC 2330.TW for 1 year and plot closing price'. That is all you say to AI!
+              Now watch closely: I copy this 4-line code, switch to Google Colab, paste it in with `Ctrl+V`, and without touching the mouse, I press **Shift + Enter**!
+              Look at the screen—in 3 seconds, a real financial trend chart appears. Now, open your Colab and do the exact same thing together with me!"*
             * **10:40 - 10:48**: *"Think back to Economics and Accounting. In our next session, you will run this notebook yourself."*
             * **10:48 - 10:50**: *"Take a short break. Any Wi-Fi issues, come to the front desk now!"*
             """)
