@@ -122,28 +122,27 @@ if selected_week == "Week 1":
               * *預告*：10:00 準時進入下方「本週實作指引」，進行 Google Colab 雲端開箱與快捷鍵暖身。
             """)
             
-        with col_b: 
+        with col_b:
             st.markdown("#### 🗣️ English Teaching Scripts")
             st.info("""
-            * **10:00 - 10:15 (Cloud Setup, Transparency Earphones & Voice Prompting)**:
-              *"Welcome back! Before we code, let's unlock the ultimate AI productivity hack: **Voice Prompting**. 
-              If you have **transparency-mode earphones**, wear them now! You can micro-whisper your prompts directly to Gemini without typing, saving tons of time, while still hearing my lecture and your partner's ideas clearly.
-              Now let's review our core keyboard shortcuts:
-              - **Copy / Paste**: `Ctrl + C` / `Ctrl + V` on Windows, or `Cmd ⌘ + C` / `Cmd ⌘ + V` on Mac.
-              - **The Life Saver (Undo)**: `Ctrl + Z` or `Cmd ⌘ + Z` if you accidentally delete code!
-              - **Colab Instant Run**: Press `Shift + Enter` to run any code cell instantly.
-              If you don't have a laptop today, pair up with the classmate next to you for **Pair Programming**."*
-            * **10:15 - 10:25**: *"Keep a separate tab open for **Google Gemini**. When Colab's AI hits its usage quota, copy your code with `Ctrl+C` and paste into Gemini with `Ctrl+V`!"*
-            * **10:25 - 10:40 (Step-by-Step Live Demo)**:
-              *"Look at the main screen. In our portal, we have the prompt: 'Fetch TSMC 2330.TW for 1 year and plot closing price'. That is all you say to AI!
-              Now watch closely: I copy this 4-line code, switch to Google Colab, paste it in with `Ctrl+V`, and without touching the mouse, I press **Shift + Enter**!
-              Look at the screen—in 3 seconds, a real financial trend chart appears. Now, open your Colab and do the exact same thing together with me!"*
-            * **10:40 - 10:48 (Economics Reflection, Interactive Q&A & Fast-Finisher Options)**:
-              *"Look at this soaring curve of TSMC. Connecting back to your freshman Economics: what market signals or supply-and-demand shifts explain this massive rally?
-              (Encourage 1-2 hands)
-              Spot on! Generative AI created an unprecedented demand shock for computing power.
-              For fast teams: tweak `period='1y'` to `'5y'` to view the multi-year cycle, or ask Gemini to outline 3 macro catalysts behind this chart!"*
-            * **10:48 - 10:50**: *"Take a short break. Any Wi-Fi issues, come to the front desk now!"*
+            * **09:00 - 09:15 (Ice-breaking & QR Code Scan)**:
+              *"Good morning everyone! Welcome to Python AI Applications. Please take out your smartphones right now and scan the two QR codes on the main screen: one for our syllabus portal, and one for our official LINE group chat.
+              Let's quickly review our 4 key rules on LINE:
+              1. Classroom: Room 506, Innovation Building.
+              2. Required devices: Laptop for cloud coding, smartphone for mobile preview.
+              3. Grading: 50% weekly practice, 20% midterm, 30% final showcase in Week 16.
+              4. LINE Nickname rule: Please rename yourself using 'Last 3 digits + Name', like '205 Huy'."*
+            * **09:15 - 09:25 (Multilingual Portal Tour)**:
+              *"Look at the top of our web portal. You can switch between 7 languages instantly using the flag buttons. Whether you prefer English, Vietnamese, Indonesian, or Traditional Chinese, you have full parallel support!"*
+            * **09:25 - 09:35 (Conductor Mindset, Interactive Discussion & Pair Teams)**:
+              *"Review our core cards on screen. Adopt the **Conductor Mindset**: AI is your orchestra, and you lead it using natural language prompts without memorizing syntax.
+              Before we talk about teams, let me ask: *'In the era of AI, do you think it is more powerful to code alone, or to collaborate in pairs? Any thoughts?'*
+              (Invite 1-2 students to share briefly)
+              *Exactly! When coding alone, you can easily get tunnel vision with your prompts. In a pair, one acts as the Product Owner focusing on business logic, while the other inspects the code and UI. Two human minds leading one AI create the best results!*
+              That's why our grading is: 50% weekly practice, 20% midterm in Week 9, and 30% Final Showcase in Week 16.
+              For our Final Showcase, we encourage **Pair Projects (teams of 2)**. To ensure everyone feels supported and no one is left behind, teams are flexible: you may work **individually (1 person)**, as a **pair (2 people)**, or form a group of **3 people maximum** if there's an odd number.
+              In Week 15, right before Demo Day, our 3rd session will be a hands-on project clinic and rehearsal to ensure your app is secure and ready!"*
+            * **09:35 - 09:50**: *"Take 5 minutes to settle down, connect to the Wi-Fi, and get ready for our cloud setup in Session 2!"*
             """)
 
     # --------------------------------------------------------------------------
