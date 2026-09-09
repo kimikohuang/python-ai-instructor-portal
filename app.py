@@ -1,6 +1,6 @@
 # ==============================================================================
 # [Script] Instructor-Side Secure Script & Teaching Prompt Portal
-# 【教師專屬】講稿與課堂導引主控台（整合 LINE 公告逐條導讀與雙語講稿）
+# 【教師專屬】講稿與課堂導引主控台（100% 精準對齊學校正式教學進度表）
 # ==============================================================================
 
 import streamlit as st
@@ -38,7 +38,7 @@ if not check_password():
 # 主控制台介面
 # ------------------------------------------------------------------------------
 st.title("🗝️ 教師專屬講稿與課堂提示控制台")
-st.caption("🎯 課堂進程：Part 1 觀念、LINE 公告逐項解說與導覽 ➔ Part 2 雲環境與 Live Demo ➔ Part 3 Lab 0 實作與雙軌 AI")
+st.caption("🎯 課堂進程：Part 1 觀念、LINE 公告導讀與進度表拆解 ➔ Part 2 雲環境與 Live Demo ➔ Part 3 Lab 0 實作與雙軌 AI")
 
 st.markdown("---")
 
@@ -46,8 +46,9 @@ with st.sidebar:
     st.header("📌 導航控制台")
     selected_week = st.selectbox("選擇上課週次", [f"Week {i}" for i in range(1, 19)])
     st.markdown("---")
-    st.markdown("**💡 第一節開場關鍵提醒**：")
-    st.info("大螢幕投影學生端入口網頁（ai-syllabus.streamlit.app）。引導掃描右上角 LINE Chat QR 後，請帶領全班點開置頂公告，逐條說明教室、必備筆電/手機、信箱與改暱稱規則！")
+    st.markdown("**💡 重要行事曆提醒**：")
+    st.warning("⚠️ 依學校教學進度表：**第 16 週 (12/24) 即為期末成果發表會 (Demo Day)**！第 17、18 週為學校自主學習活動（觀看 FinTech 影音與彙整歷程檔案），非實體發表。")
+    st.markdown("---")
     if st.button("🔒 鎖定返回登入頁"):
         st.session_state["password_correct"] = False
         st.rerun()
@@ -58,7 +59,7 @@ if selected_week == "Week 1":
     
     tab1, tab2, tab3 = st.tabs([
         "Part 1 ｜ 破冰、LINE 公告逐條解說與網頁導航 (09:00 - 09:50)", 
-        "Part 2 ｜ 雲環境、快捷鍵與 Live Demo (10:00 - 10:50)", 
+        "Part 2 ｜ 雲環境、快捷鍵與台積電 Demo (10:00 - 10:50)", 
         "Part 3 ｜ Lab 0 實作與雙軌 AI (11:00 - 11:50)"
     ])
     
@@ -68,25 +69,23 @@ if selected_week == "Week 1":
     with tab1:
         st.subheader("🎙️ Part 1：破冰、LINE 社群公告逐項解說與網頁導覽 (學校第 2 節：09:00 - 09:50)")
         
-        # 內嵌 LINE 公告全文供老師現場對照
         with st.expander("📋 LINE 社群置頂公告全文（現場逐條對照）", expanded=True):
             st.code("""
-📌 [Python AI Applications] Course Information & Essential Links
-
-Welcome to Python AI Applications! Please read the following key details and bookmark this post:
+📌 [Python AI Applications] Official Course Information & Essential Links
 
 📍 Classroom: Innovation Building, Room 506 (創506) | Thursdays 09:00 - 11:50
 🎒 Required Devices for Every Class:
-   1. Laptop / Notebook (Required): Used for cloud coding with Google Colab.
-   2. Smartphone: Used for LINE chat, real-time AI Q&A, and mobile app preview.
+   1. Laptop / Notebook (Required): For hands-on cloud coding with Google Colab.
+   2. Smartphone: For LINE chat, real-time AI Q&A, and mobile app preview.
+🗓️ Key Milestones:
+   • Week 9 (Nov 05): Midterm Hands-on Review (20%)
+   • Week 16 (Dec 24): Final Project Showcase & Live Web App Demo (30%)
+   • Weeks 17-18: Flexible Independent Study
 🔗 Course Portal: https://ai-syllabus.streamlit.app/
-💻 In-Class Cloud Tools:
-   • Google Colab: https://colab.research.google.com/
-   • Google Gemini: https://gemini.google.com/
-✉️ Official Contact Email: kimikohuang@mail.mcut.edu.tw
-⚠️ Group Nickname Policy:
-   Please set your nickname as: 👉 "Last 3 digits of Student ID + Your Name" (e.g. 205 Huy)
-   *Required to verify attendance and log bonus participation points.*
+💻 Open Cloud Tools: Colab, Gemini, AI Studio, FRED
+🕒 Office Hours: Right after class in Room 506, or by appointment via LINE
+✉️ Official Email: kimikohuang@mail.mcut.edu.tw
+⚠️ Group Nickname Policy: 👉 "Last 3 digits of Student ID + Your Name" (e.g. 205 Huy)
             """, language="text")
 
         col_a, col_b = st.columns(2)
@@ -95,42 +94,41 @@ Welcome to Python AI Applications! Please read the following key details and boo
             st.markdown("#### ⏱️ 時間軸與中文授課導引")
             st.markdown("""
             * **09:00 - 09:15 ｜ 破冰、雙 QR Code 與 LINE 置頂公告逐條導讀**
-              * *操作重點*：指著大螢幕右上角的 **Portal QR** 與 **LINE Chat QR**，請全班拿手機掃描。
+              * *操作重點*：指著大螢幕右上角 **Portal QR** 與 **LINE Chat QR**，請同學立即掃描加入。
               * *逐條帶讀 LINE 公告*：
-                1. **教室確認**：本課程固定在「創新大樓 506 教室 (創506)」。
-                2. **每週必備設備**：強調每週務必攜帶 **筆電（跑 Colab 實作）** 與 **手機（LINE 與行動 App 成果預覽）**；今天未帶筆電者稍後安排 Pair Programming。
-                3. **傳送門與工具**：介紹 Portal 網址、Google Colab 與 Google Gemini。
-                4. **聯絡管道**：一般問題在 LINE 群直接問；隱私與成績寄至官方信箱 `kimikohuang@mail.mcut.edu.tw`。
-                5. **群組暱稱規範（最重要）**：現場監督全班將暱稱改成「學號末三碼 + 名字」（如：`205 Huy`），說明這是點名出缺席與平常發問加分的唯一依據！
+                1. **教室地點**：創新大樓 506 教室 (創506)。
+                2. **每週必備設備**：每週帶 **筆電（跑 Colab）** 與 **手機（LINE 與行動 App 成果預覽）**；今天未帶者稍後結對實作。
+                3. **三大評量里程碑**：平常實作 50%、第 9 週期中評量 20%、**第 16 週 (12/24) 期末成果發表會 30%**（特別提醒 17-18 週為彈性自主學習）。
+                4. **諮詢時間 (Office Hours)**：每週四下課後直接在 506 教室面談，或隨時在 LINE 群預約校內見面；公務信箱為 `kimikohuang@mail.mcut.edu.tw`。
+                5. **群組暱稱規範**：現場監督全班將暱稱改成「學號末三碼 + 名字」（如：`205 Huy`），這是平時點名加分的唯一依據！
             * **09:15 - 09:25 ｜ 多語系切換與側邊欄 AI 助教演練**
-              * *操作重點*：現場點擊 Vietnamese、Indonesian 等按鈕展示瞬切多語系。
-              * *引導說明*：展開左側邊欄 **Course AI Assistant**，說明提問能拿加分，支援 7 國語言與匿名模式。
+              * *操作重點*：展示點擊越南語、印尼語等多語系切換；展開左側邊欄 **Course AI Assistant**，說明發問拿平時加分與匿名模式。
             * **09:25 - 09:35 ｜ 四大核心卡片與指揮家思維**
-              * *卡片導覽*：串聯大一會計經濟、大二統計管理；50% 上機、20% 期中、30% 期末。
-              * *指揮家思維*：不背語法，用自然語言 prompt 當樂團指揮家。
+              * *指揮家思維*：不用死背語法，我們是指揮家，AI 是演奏樂手，以自然語言 prompt 協同作業。
             * **09:35 - 09:40 ｜ 激勵亮點：展示 Streamlit 網頁力量**
-              * *激勵說明*：大家手機上的整個課綱網頁與 AI 助教，都是老師用純 Python + Streamlit 做的！前幾週在 Colab 打基礎，第 10-11 週大家也能做出自己的 Web App 發布到手機上。
-            * **09:40 - 09:48 ｜ 點開「18 週課綱進度總表」看全學期里程碑**
-              * *操作重點*：大螢幕展開總表，指出第 9 週期中報告、第 11 週雲端部署、第 17-18 週期末成果會。
+              * *激勵說明*：眼前的手機課綱與 AI 助教全是老師用純 Python + Streamlit 打造的！前幾週在 Colab 打基礎，第 10-11 週大家也能做出自己的 Web App 發布到手機上。
+            * **09:40 - 09:48 ｜ 點開「18 週進度總表」看全學期課程地圖**
+              * *操作重點*：展開 18 週表，指出台積電數據工程、FRED 總經、Google AI Studio、財報法說會解析，直到第 16 週發表會。
             * **09:48 - 09:50 ｜ 第一節收尾與課間休息**
-              * *預告*：10:00 第二節準時開箱 Google Colab 與鍵盤快捷鍵。
+              * *預告*：10:00 準時進入下方「本週實作指引」，進行 Google Colab 雲端開箱與快捷鍵暖身。
             """)
             
         with col_b:
             st.markdown("#### 🗣️ English Teaching Scripts")
             st.info("""
             * **09:00 - 09:15 (QR & LINE Pinned Notice)**:
-              *"Good morning everyone, welcome to Python AI Applications! Look at the top-right of the screen. Scan the left QR code for our course portal, and scan the right one to join our LINE OpenChat right now."*
-              *(Once students join)*:
-              *"Everyone, please open our **Pinned Announcement** in LINE. Let's go through it together:
-              1. **Classroom**: We will meet here in Innovation Building Room 506 every Thursday.
-              2. **Required Devices**: Bring your **laptop** (for Colab coding) and your **smartphone** every single week. If you didn't bring a laptop today, don't worry—we will do pair programming later.
-              3. **Contact Email**: For private grading or leave matters, email `kimikohuang@mail.mcut.edu.tw`.
-              4. **Important Nickname Rule**: Change your LINE nickname right now to **'Last 3 digits of Student ID + Your Name'** (e.g., `205 Huy`). We use this to verify attendance and award in-class engagement bonus points!"*
-            * **09:15 - 09:25**: *"Notice the language buttons below the title—clicking Vietnamese, Indonesian, or Thai changes everything instantly. In the sidebar, our Course AI Assistant is ready. Asking questions earns participation points!"*
-            * **09:25 - 09:35**: *"Review our 4 cards. Adopt the **Conductor Mindset**: AI is your orchestra, and you conduct it with prompts. Grading: 50% weekly practice, 20% midterm, 30% final."*
-            * **09:35 - 09:40 (Motivation)**: *"Everything you see on your phone right now was built with pure Python and **Streamlit**! In Weeks 10 & 11, you will build and launch your very own live web apps on your phones."*
-            * **09:40 - 09:48**: *"Let's expand the 18-week schedule. Notice Week 9 Midterm Review, Week 11 Cloud Deployment, and Weeks 17-18 Final FinTech Showcase."*
+              *"Good morning everyone, welcome to Python AI Applications! Look at the top-right of the screen. Scan the left QR code for our portal, and the right QR code to join our LINE OpenChat right now."*
+              *(After joining)*:
+              *"Everyone, please open our **Pinned Announcement** in LINE:
+              1. **Classroom**: Innovation Building, Room 506 every Thursday.
+              2. **Required Devices**: Bring your **laptop** (for cloud coding) and **smartphone** every single week.
+              3. **Milestones**: 50% weekly practice, 20% midterm in Week 9, and **30% Final Showcase in Week 16 (Dec 24)**. Weeks 17-18 will be flexible independent study.
+              4. **Office Hours**: You can talk to me directly right after class in Room 506, or message in this LINE chat to set up an on-campus meeting. Email: `kimikohuang@mail.mcut.edu.tw`.
+              5. **Nickname Rule**: Change your LINE nickname right now to **'Last 3 digits of Student ID + Name'** (e.g. `205 Huy`). We use this for attendance and participation points!"*
+            * **09:15 - 09:25**: *"Notice the language buttons below the title—the syllabus adapts to 7 languages instantly. In the sidebar, our Course AI Assistant is ready. Asking questions earns engagement points!"*
+            * **09:25 - 09:35**: *"Adopt the **Conductor Mindset**: AI is your orchestra, and you conduct it with prompts. No syntax memorization required!"*
+            * **09:35 - 09:40 (Inspiration)**: *"Everything you see on your phone right now was built with pure Python and **Streamlit**! In Weeks 10 & 11, you will build and launch your very own live web apps."*
+            * **09:40 - 09:48**: *"Let's expand the 18-week schedule. Notice Week 9 Midterm Review, Week 11 Cloud Deployment, and Week 16 Final Showcase."*
             * **09:48 - 09:50**: *"10-minute break. At 10:00, we scroll down to open Google Colab!"*
             """)
 
