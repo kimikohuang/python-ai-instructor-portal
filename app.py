@@ -108,22 +108,24 @@ if selected_week == "Week 1":
     # TAB 2: 第二節課（10:00 - 10:50）
     # --------------------------------------------------------------------------
     with tab2:
-        st.subheader("🎙️ Part 2：雲端環境開箱、Gemini 互補策略與 Pair Programming 精神 (學校第 3 節：10:00 - 10:50)")
+        st.subheader("🎙️ Part 2：雲端開箱、鍵盤快捷鍵、Gemini 互補與 Pair Programming (學校第 3 節：10:00 - 10:50)")
         col_a, col_b = st.columns(2)
         
         with col_a:
             st.markdown("#### ⏱️ 時間軸與中文授課導引")
             st.markdown("""
-            * **10:00 - 10:15 ｜ Google 帳號、Colab 傳送門與 Pair Programming 精神**
-              * *操作重點*：引導同學點擊網頁上的 Colab 連結。
-              * *引導說明*：確認大家登入 Google 帳號。若有同學沒帶筆電，請兩人共用一台，進行 **Pair Programming（結對編程）**。強調在 AI 時代，這不只是克難克難，而是訓練「雙人協作、共同向 AI 下指令與除錯」的重要職場能力，能激盪出更好的商業邏輯。
+            * **10:00 - 10:15 ｜ Google 帳號、鍵盤快捷鍵暖身與 Pair Programming**
+              * *鍵盤暖身*：說明打字與快捷鍵是跟 AI 高效溝通的超能力。帶大家複習 Windows (`Ctrl`) 與 Mac (`Cmd ⌘`) 的核心捷徑：
+                * 複製 `Ctrl/Cmd + C`、貼上 `Ctrl/Cmd + V`、剪下 `Ctrl/Cmd + X`
+                * **救命鍵（復原）**：`Ctrl/Cmd + Z`（代碼改壞或刪掉時不用慌！）
+                * **Colab 執行神鍵**：`Shift + Enter`（免按滑鼠，一鍵跑程式）
+              * *Pair Programming*：若沒帶電腦，兩人一組結對協作，共同下提示詞與除錯。
             * **10:15 - 10:25 ｜ 雙軌 AI 互補機制說明 (Colab + Gemini)**
-              * *引導說明*：提醒同學除了 Colab 內建的 AI 之外，一定要另外開一個分頁放 **Google Gemini**。兩者是最佳互補工具：當 Colab 內建 AI 的免費額度用盡或遇到複雜報錯時，直接切換到 Gemini 繼續對話，確保實作不中斷。
+              * *引導說明*：開另一個分頁放 Google Gemini。Colab 內建 AI 額度用完或遇到複雜報錯時，用快捷鍵 `Ctrl/Cmd + C` 複製貼到 Gemini，確保實作不中斷。
             * **10:25 - 10:40 ｜ 現場 Live Demo：4 行 Python 抓取台積電股價**
               * *操作重點*：老師在講台投影 Colab，現場輸入 yfinance 抓取台積電 (`2330.TW`) 並繪圖。
-              * *示範說明*：展示不需在電腦安裝龐大軟體，只要雲端 4 行代碼就能即時抓取全球市場數據並產生走勢圖。
             * **10:40 - 10:48 ｜ 商業數據思考與第三節任務預告**
-              * *引導說明*：引導同學思考大一經濟與會計數據，說明為何動態即時圖表能協助商業洞察。
+              * *引導說明*：連結大一經濟與會計數據，預告第三節換大家親手跑程式。
             * **10:48 - 10:50 ｜ 課間緩衝與連線疑難排解**
               * *引導說明*：下課 2 分鐘，協助確認連線狀態。
             """)
@@ -131,10 +133,14 @@ if selected_week == "Week 1":
         with col_b:
             st.markdown("#### 🗣️ English Teaching Scripts")
             st.info("""
-            * **10:00 - 10:15**: *"Welcome back! Scroll down to our Weekly Agenda and click **🚀 Open Google Colab**. If you don't have a laptop today, please pair up with the classmate next to you for **Pair Programming**. In the AI era, pair programming is a superpower—instead of just sharing a keyboard, you and your partner share the role of directing AI and solving business problems together!"*
-            * **10:15 - 10:25**: *"Also, keep a separate browser tab open for **Google Gemini**. Colab and Gemini act as a dual-track system. If Colab's built-in AI ever hits its usage limit or throws a confusing error, simply switch over to Gemini. Your workflow will never be interrupted."*
+            * **10:00 - 10:15**: *"Welcome back! Before we jump in, let's unlock some keyboard superpowers. In coding and AI prompting, your keyboard is much faster than your mouse:
+              - **Copy / Paste**: `Ctrl + C` / `Ctrl + V` on Windows, or `Cmd ⌘ + C` / `Cmd ⌘ + V` on Mac.
+              - **The Life Saver (Undo)**: `Ctrl + Z` or `Cmd ⌘ + Z` if you accidentally delete your code!
+              - **Colab Instant Run**: Press `Shift + Enter` to run any code cell instantly.
+              If you don't have a laptop today, please pair up with the classmate next to you for **Pair Programming**."*
+            * **10:15 - 10:25**: *"Keep a separate browser tab open for **Google Gemini**. When Colab's built-in AI hits its quota, simply copy your code with `Ctrl+C` and paste it into Gemini with `Ctrl+V`!"*
             * **10:25 - 10:40**: *"Look at the main screen. With just 4 lines of Python in the cloud, we fetch TSMC's daily prices (`2330.TW`) and instantly plot a trend chart."*
-            * **10:40 - 10:48**: *"Think back to Economics and Accounting. Instead of static tables, Python empowers you to observe market volatility dynamically. In our next session, you will run this notebook yourself."*
+            * **10:40 - 10:48**: *"Think back to freshman Economics and Accounting. In our next session, you will run this notebook yourself."*
             * **10:48 - 10:50**: *"Take a short break. If anyone has Wi-Fi or Google login issues, come to the front desk now!"*
             """)
     # --------------------------------------------------------------------------
